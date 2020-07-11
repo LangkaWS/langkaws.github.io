@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+        <title>Langka WebStudio | Cr&eacute;ation de sites web</title>
+    </head>
+
+    <body>
+    	<div id="top-page">
+    		<header id="header">
+				<a href="index.html"><img src="resources/images/logo-langka-marge.png" alt="" id="logo-langka"></a>
+				<nav>
+				<ul>
+					<li class="nav-item"><a href="index.html">Accueil</a></li>
+					<li class="nav-item"><a href="a_propos.html">&Agrave; propos</a></li>
+					<li class="nav-item"><a href="projets.html">Projets</a></li>
+					<li class="nav-item"><a href="blog.html">Blog</a></li>
+					<li class="current"><a href="contact.html">Contact</a></li>
+				</ul>
+				</nav>
+			</header>
+		</div>
+
+		<div id="body-page">
+			<h1>Un projet ? Une demande ? Contactez-moi !</h1>
+			<div id="contact-body">
+				<div id="contact-left">
+					<ul id="contact-text">
+						<li><img src="resources/images/address-mini.png" alt="Adresse"> Adresse :</li>
+						<li class="contact-data">126 Avenue du G&eacute;n&eacute;ral de Gaulle 67201 Eckbolsheim</li>
+						<li><img src="resources/images/phone-mini.png" alt="T&eacute;l&eacute;phone"> T&eacute;l&eacute;phone :</li>
+						<li class="contact-data">06.36.01.11.08</li>
+						<li><img src="resources/images/mail-mini.png" alt="Mail"> Mail :</li>
+						<li class="contact-data"><a href="mailto:contact@langkawebstudio.fr">contact@langkawebstudio.fr</a></li>
+						<li><img src="resources/images/clock-mini.png" alt="Horaires"> Horaires :</li>
+						<li class="contact-data">Du Lundi au Vendredi<br> De 9h à 15h</li>
+					</ul>
+					<ul id="contact-social">
+						<li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3BefA7jWBYRICndF68gs2ZsQ%3D%3D" target=_blank><img src="resources/images/icon-linkedin.png" alt="Logo LinkedIn"></a></li>
+						<li><a href="skype:langkawebstudio?chat"><img src="resources/images/icon-skype.png" alt="Logo Skype"></a></li>
+					</ul>
+				</div>
+				<form method="post" action="traitement-contact.php">
+					<p>
+							<label id="civ-label">Civilité : </label>
+							<input type="radio" name="civilite" value="mme" id="mme"><label for="mme">Mme</label>
+							<input type="radio" name="civilite" value="mr" id="mr"><label for="mr">M.</label> *<br>
+						<div id="contact-info">
+							<label for="prenom">Pr&eacute;nom : </label><input type="text" name="pr&eacute;nom" id="prenom"> *<br>
+							<label for="nom">Nom : </label><input type="text" name="nom" id="nom"> *<br>
+							<label for="societe">Soci&eacute;t&eacute; (facultatif) : </label><input type="text" name="soci&eacute;t&eacute;" id="societe"> *<br>
+							<label for="mail">Adresse email : </label><input type="email" name="adresse-email" id="mail"> *<br>
+							<label for="phone">T&eacute;l&eacute;phone : </label><input type="tel" name="t&eacute;l&eacute;phone" id="phone"><br>
+							<p id="form-commentaire">Les champs suivis d'un astérisque (*) sont obligatoires.<br></p>
+							<label for="message">Message : </label><textarea name="message" id="message"></textarea><br>
+							<input type="submit" name="send" id="send">
+						</div>
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div id="foot_flex">
+				<div class="foot_el"><h6 id="sitemap-header">Plan du site</h6>
+					<div id="sitemap"><ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="a_propos.html">&Agrave; propos</a></li>
+						<li><a href="projets.html">Projets</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul></div>
+				</div>
+				<div class="foot_el"><h6>Rester en contact</h6>
+					<div class="social_media"><ul>
+						<li><a href="https://www.linkedin.com/in/aurore-weingartner/" target=_blank><img src="resources/images/icon-linkedin.png" alt="Logo LinkedIn"></a></li>
+						<li><a href="skype:langkawebstudio?chat"><img src="resources/images/icon-skype.png" alt="Logo Skype"></a></li>
+					</ul></div>
+				</div>
+				<div class="foot_el"><h6 id="foot-contact-header">Coordonn&eacute;es</h6>
+					<div id="foot_contact"><ul>
+						<li><em>T&eacute;l&eacute;phone :</em> (+33) 06.36.01.11.08</li>
+						<li><em>Mail :</em> <a href="mailto:contact@langkawebstudio.fr">contact@langkawebstudio.fr</a></li>
+						<li><em>Adresse :</em><br> 126 Avenue du G&eacute;n&eacute;ral de Gaulle<br> 67201 Eckbolsheim</li>
+					</ul></div>
+				</div>
+			</div>
+			<div id="copy"><p>&copy; 2020 Langka WebStudio. Tous droits r&eacute;serv&eacute;s.</p></div>
+		</footer>
+    </body>
+</html>

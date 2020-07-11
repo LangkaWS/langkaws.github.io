@@ -1,0 +1,370 @@
+/* CSS by Langka WebStudio*/
+
+/* General */
+
+@font-face {
+	font-family: 'roboto';
+	src: url(resources/fonts/roboto/Roboto-Regular.ttf);
+}
+
+*
+{
+	font-family: 'roboto';
+	color: black;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#down_arrow
+{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+#up_arrow
+{
+	position: fixed;
+	right: 80px;
+	bottom: 20px;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+#top-page
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color: white;
+}
+
+em
+{
+	text-decoration: underline;
+	font-style:normal;
+}
+
+/* Header */
+
+#top-page
+{
+	border-bottom: 2px solid black;
+}
+
+#logo-langka
+{
+	float:left;
+}
+
+/* Navigation */
+
+nav
+{
+	display: block;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.5em;
+	margin-bottom:0px;
+	margin-top:0px;
+
+}
+
+nav li
+{
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+nav .current a
+{
+	padding: 5px;
+	background-color: rgb(255,160,15);
+	font-weight: 600;
+	color: rgb(255,255,244);
+}
+
+nav .nav-item a
+{
+	padding: 5px;
+}
+
+nav .nav-item a:hover
+{
+	background-color: rgb(242,230,209);
+}
+
+
+/* Body Général */
+
+body
+{
+	margin:0px;
+	padding: 0px;
+
+}
+
+h1
+{
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top:0px;
+	padding:5px;
+	background-color: rgb(255,211,126);
+}
+
+#body-page
+{
+	padding-top:165px;
+	background: url("resources/images/background_transp.png") repeat top left;
+	margin:auto;
+}
+
+/* Index */
+
+	#index-body {
+		width: 70%;
+		margin:auto;
+		padding-bottom: 20px;
+	}
+
+	#index-body h2 {
+		text-align: center;
+	}
+
+	#index-body p {
+		margin-bottom:0px;
+	}
+
+/* A propos */
+
+	#about
+	{
+		margin:auto;
+		width:70%;
+	}
+
+	#about1
+	{
+		
+		min-width:295px;
+		text-align: justify;
+	}
+
+	#about-experience {
+		min-width:300px;
+	}
+
+	#about-languages {
+		min-width:300px;
+	}
+
+	#about-formations {
+		min-width:300px;
+	}
+
+	#about-formations ul
+	{
+		margin-bottom:0px;
+	}
+
+/* Contact */
+
+	#contact-body
+	{
+		display:flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-around;
+		width:70%;
+		margin:auto;
+	}
+
+	#contact-left
+	{
+		display:flex;
+		flex-direction: column;
+	}
+
+	#contact-text
+	{
+		margin-bottom:0px;
+	}
+
+	#contact-text li
+	{
+		padding-bottom:15px;
+	}
+
+	.contact-data
+	{
+		border-bottom:1px solid black;
+		margin-bottom:15px;
+	}
+
+	#contact-social
+	{
+		display:flex;
+		margin-top:5px;
+	}
+
+	#contact-social li
+	{
+		padding-right:15px;
+	}
+
+/* Form */
+
+	#civ-label
+	{
+		display:inline-block;
+		width:150px;
+	}
+
+	#contact-info label
+	{
+		display : block;
+		width:150px;
+		float:left;
+	}
+
+	input
+	{
+		margin-bottom:5px;
+	}
+
+	#send
+	{
+		margin-top:20px;
+	}
+
+	#message
+	{
+		width:100%;
+		height:300px;
+	}
+
+	form p
+	{
+		margin-bottom:5px;
+		margin-top:0px;
+	}
+
+	#form-commentaire
+	{
+		margin-bottom:10px;
+		font-size:0.8em;
+	}
+
+/* Footer */
+
+	footer
+	{
+		background-color: rgb(255,211,126);
+	}
+
+	#foot_flex
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		margin:auto;
+		width:1000px;
+	}
+
+	.foot_el
+	{
+		font-size: 0.8em;
+		width:300px;
+	}
+
+	h6
+	{
+		font-size: 1em;
+		text-decoration: underline;
+		font-weight: normal;
+		margin:0px;
+		text-align: center;
+	}
+
+	#sitemap-header
+	{
+		padding-right:80px;
+		text-align: right;
+	}
+
+	#sitemap
+	{
+		padding-left:152px;
+	}
+
+	#foot_contact, #foot-contact-header
+	{
+		padding-left:80px;
+		text-align: left;
+	}
+
+	footer a:hover
+	{
+		color:rgb(50,50,50);
+	}
+
+	.social_media ul
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+
+	.social_media img
+	{
+		padding-right: 10px;
+	}
+
+	#copy
+	{
+		font-size: 0.7em;
+		background-color: white;
+		padding-left: 10px;
+	}
+
+	#copy p
+	{
+		margin-top:0px;
+		text-align: center;
+	}
+
+/* Responsive */
+
+@media (max-width:1140px) {
+	#contact-body {
+		flex-direction: column;
+	}
+
+	#contact-text, #contact-social, form {
+		margin:auto;
+	}
+
+	.contact-data {
+		width:378px;
+	}
+
+	#contact-social {
+		padding-bottom: 50px;
+	}
+}
