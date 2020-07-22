@@ -195,6 +195,8 @@
   .go-to-btn {
   	height: 40px;
   	padding: 5px;
+  	margin-right: auto;
+  	margin-left: auto;
   	background-color: var(--primary-color);
   	border-radius: 8%;
   	border: none;
