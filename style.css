@@ -5,6 +5,8 @@
 :root{
 	--primary-color: #ffe7b9;
   	--secondary-color:#ffa00f;
+  	--primary-background: white;
+  	--secondary-background: #1c1c1c;
 }
 
   html, body {
@@ -32,8 +34,8 @@
     right:0;
     width:100%;
     font-size: 1.6em;
-    background-color: white;
-    border-bottom: solid 3px var(--secondary-color, #000000);
+    background-color: var(--primary-background);
+    border-bottom: solid 3px var(--secondary-color);
     z-index:5;
   }
 
@@ -110,9 +112,9 @@
 /* Projects section */
 
   #projects {
-    background-color: white;
-    border-top: solid 3px #ffa00f;
-    border-bottom: solid 3px #ffa00f;
+    background-color: var(--secondary-background);
+    border-top: solid 3px var(--secondary-color);
+    border-bottom: solid 3px var(--secondary-color);
     padding: 50px 0;
     width: 100%;
   }
@@ -123,49 +125,36 @@
     margin-bottom: 20px;
   }
 
-  .project-group {
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
-    grid-column-gap: 15px;
+  .project-showcase {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     margin:auto;
   }
 
   .project-tile {
-    display: grid;
-    grid-template-rows: 16vw 4vw;
-    grid-row-gap: 10px;
     background-color: black;
-  }
-
-  .project-thumbnail {
-    width: calc(100vw/5);
-    min-width: 197px;
-    justify-self: center;
-    align-self: center;
+    width: 385px;
+    height:350px;
+    border: solid blue 1px;
   }
 
   .project-title {
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
+  	height: 75px;
+    text-align: center;
+    color: white;
     font-size: 1.5em;
+    border: solid red 1px;
   }
 
-  .project-title:hover {
-    animation-name: project-title-anim;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
+  .project-thumbnail {
+    border: solid yellow 1px;
   }
 
-  @keyframes project-title-anim {
-    100% {
-      background-color: #1c1c1c;
-      font-size: 1.7em;
-    }
+  .project-description, .project-tags, .go-to-project {
+  	display: hidden;
   }
 
 /* Contact section */
