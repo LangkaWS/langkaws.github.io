@@ -188,8 +188,9 @@
   	box-shadow: 2px 2px black;
   }
 
-  .tag p {
-
+  .tag span {
+  	vertical-align:middle;
+  	padding: 0 5px;
   }
 
   .go-to-project {
