@@ -196,7 +196,7 @@
   	height: 25px;
   }
 
-  .project-tile:hover .project-description {
+  .project-tile:hover .project-description, .project-tags, .go-to-project {
   	display: block;
   }
 
