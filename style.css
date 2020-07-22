@@ -2,6 +2,11 @@
 
 /* General */
 
+:root{
+	--primary-color: #ffe7b9;
+  	--secondary-color:#ffa00f;
+}
+
   html, body {
     scroll-behavior: smooth;
   }
@@ -18,8 +23,6 @@
     color: black;
   }
 
-  --primary-color: #ffe7b9;
-  --secondary-color:#ffa00f;
 
 /* Header & Nav */
 
