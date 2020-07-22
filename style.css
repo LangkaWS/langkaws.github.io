@@ -168,6 +168,11 @@
   	border: solid green 1px;
   }
 
+  .project-description {
+  	background-color: red;
+  	height: 200px;
+  }
+
   .project-tile:hover + .project-description {
   	display: block;
   }
