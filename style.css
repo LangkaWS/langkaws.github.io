@@ -140,14 +140,12 @@
     background-color: black;
     width: 385px;
     height:350px;
-    border: solid blue 1px;
   }
 
   .project-title {
   	height: 75px;
     text-align: center;
     color: white;
-    border: solid red 1px;
   }
 
   h4 {
@@ -167,20 +165,16 @@
   	position: relative;
   	top:-275px;
   	background-color: rgba(0,0,0,0.9);
-  	border: solid green 1px;
   }
 
   .project-description {
   	color: white;
-  	height: 200px;
+  	height: 175px;
   }
 
-  .project-tag {
+  .project-tags {
   	height: 50px;
-  	display: flex;
-  	justify-content: space-between;
-  	margin-left: auto;
-  	margin-right: auto;
+  	justify-content: center;
   	border: solid orange 1px;
   }
 
@@ -188,16 +182,38 @@
   	background-color: var(--darker-ternary-color);
   	color: white;
   	height: 30px;
-  	border-radius: 2%;
-  	box-shadow: 2px black;
+  	margin-left: 5px;
+  	margin-right: 5px;
+  	border-radius: 18%;
+  	box-shadow: 2px 2px black;
   }
 
   .go-to-project {
-  	height: 25px;
+  	height: 50px;
   }
 
-  .project-tile:hover .project-description, .project-tags, .go-to-project {
+  .go-to-btn {
+  	height: 7px;
+  	background-color: var(--primary-color);
+  	border-radius: 18%;
+  }
+
+  .go-to-btn:hover {
+  	background-color: var(--secondary-color);
+  	color: white;
+  }
+
+  .external-link-icon {
+  	height: 7px;
+  	color: white;
+  }
+
+  .project-tile:hover .project-description, .project-tile:hover .go-to-project {
   	display: block;
+  }
+
+  .project-tile:hover .project-tags {
+  	display: flex;
   }
 
 /* Contact section */
