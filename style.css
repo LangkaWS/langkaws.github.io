@@ -130,6 +130,7 @@
   	display: flex;
   	justify-content: space-between;
   	width: 600px;
+  	margin: auto;
   }
 
   .filter-tag {
@@ -139,11 +140,15 @@
   	padding: 5px;
   	background-color: var(--primary-color);
   	border-radius: 5px;
+  	text-align: center;
   }
+
+
 
   #decorative-line {
   	background-color: black;
   	transform: skewX(-10deg);
+  	height: 20px;
   }
 
   #project-showcase {
@@ -154,6 +159,15 @@
     flex-wrap: wrap-reverse;
     overflow: hidden;
     margin:auto;
+    overflow: hidden;
+  }
+
+  .filterDiv {
+  	display: none;
+  }
+
+  .show {
+  	display: block;
   }
 
   .project-tile {

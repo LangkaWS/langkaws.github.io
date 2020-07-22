@@ -6,6 +6,50 @@
         <link rel="icon" type="image/png" href="resources/icons/icone-langkaws.png">
 		<link rel="stylesheet" href="style.css">
         <title>Langka WebStudio | Web developer</title>
+        <script>filterProjects("all")
+    		function filterProjects(c) {
+    			var x, i;
+    			x = document.getElementsByClassName("filterDiv");
+    			if(c == "all") c = "";
+    			for(i = 0; i < x.length; i++) {
+    				removeClass(x[i], "show");
+    				if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    			}
+    		}
+
+    		function addClass(element, name) {
+    			var i, arr1, arr2;
+    			arr1 = element.className.split(" ");
+    			arr2 = name.split(" ");
+    			for(i = 0; i < arr2.length; i++) {
+    				if(arr1.indexOf(arr2[i]) == -1) {
+    					element.className += " " + arr2[i];
+    				}
+    			}
+    		}
+
+    		function removeClass(element, name) {
+    			var i, arr1, arr2;
+    			arr1 = element.className.split(" ");
+    			arr2 = name.split(" ");
+    			for(i = 0; i < arr2.length; i++) {
+    				while(arr1.indexOf(arr2[i]) > -1) {
+    					arr1.splice(arr1.indexOf(arr2[i]), 1);
+    				}
+    			}
+    			element.className = arr1.joint(" ");
+    		}
+
+    		var btnContainer = document.getElementById("filter-div");
+    		var btns = btnContainer.getElementsByClassName("btn");
+    		for(var i = 0; i < btns.length; i++) {
+    			btns[i].addEventListener("click", function() {
+    				var current = document.getElementsByClassName("active");
+    				current[0].className = current[0].className.replace(" active", "");
+    				this.className += " active";
+    			});
+    		}
+    	</script>
     </head>
 
     <body>
@@ -33,15 +77,15 @@
 		  <h3>Web development portfolio</h3>
 
 		  <div id="filter-div">
-		  	<div class="filter-tag">All</div>
-		  	<div class="filter-tag">Front-end</div>
-		  	<div class="filter-tag">JavaScript</div>
+		  	<button type="button" class="filter-tag btn active" id="filter-all" onClick="filterProjects('all')">All</button>
+		  	<button type="button" class="filter-tag btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
+		  	<button type="button" class="filter-tag btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
 		  	<div id="decorative-line"></div>
 		  </div>
 
 		  	<div id="project-showcase">
 
-			   	<div class="project-tile">
+			   	<div class="project-tile filterDiv front-end">
 			   		<a href="https://codepen.io/LangkaWS/full/rNxOQre" target="_blank" class="project-link">
 			   			<div class="project-title">
 			   				<h4>Tribute page</h4>
@@ -64,7 +108,7 @@
 			   		</a>
 			   	</div>
 
-			    <div class="project-tile">
+			    <div class="project-tile filterDiv front-end">
 			    	<a href="https://codepen.io/LangkaWS/full/LYpvjxQ" target="_blank" class="project-link">
 			    		<div class="project-title">
 			   				<h4>Survey form</h4>
@@ -86,7 +130,7 @@
 			    	</a>
 			    </div>
 
-			    <div class="project-tile">
+			    <div class="project-tile filterDiv front-end">
 			    	<a href="https://codepen.io/LangkaWS/full/poggzJW" target="_blank" class="project-link">
 			    		<div class="project-title">
 			   				<h4>Product landing page</h4>
@@ -108,7 +152,7 @@
 			    	</a>
 			    </div>
 
-			    <div class="project-tile">
+			    <div class="project-tile filterDiv front-end">
 			    	<a href="https://codepen.io/LangkaWS/full/rNOgdzb" target="_blank" class="project-link">
 			    		<div class="project-title">
 			   				<h4>Technical documentation page</h4>
