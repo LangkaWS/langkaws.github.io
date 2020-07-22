@@ -193,9 +193,12 @@
   }
 
   .go-to-btn {
-  	height: 7px;
+  	height: 40px;
+  	padding: 5px;
   	background-color: var(--primary-color);
-  	border-radius: 18%;
+  	border-radius: 8%;
+  	border: none;
+  	text-transform: uppercase;
   }
 
   .go-to-btn:hover {
@@ -204,8 +207,8 @@
   }
 
   .external-link-icon {
-  	height: 7px;
-  	color: white;
+  	height: 10px;
+  	fill: white;
   }
 
   .project-tile:hover .project-description, .project-tile:hover .go-to-project {
