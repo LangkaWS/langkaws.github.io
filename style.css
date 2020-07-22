@@ -173,7 +173,7 @@
   	height: 200px;
   }
 
-  .project-tile:hover + .project-description {
+  .project-link:hover + .project-description {
   	display: block;
   }
 
