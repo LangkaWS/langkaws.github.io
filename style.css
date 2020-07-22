@@ -1,370 +1,250 @@
-/* CSS by Langka WebStudio*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* General */
 
-@font-face {
-	font-family: 'roboto';
-	src: url(resources/fonts/roboto/Roboto-Regular.ttf);
-}
-
-*
-{
-	font-family: 'roboto';
-	color: black;
-}
-
-a
-{
-	text-decoration: none;
-}
-
-#down_arrow
-{
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-}
-
-#up_arrow
-{
-	position: fixed;
-	right: 80px;
-	bottom: 20px;
-}
-
-ul
-{
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-#top-page
-{
-	position:fixed;
-	top:0px;
-	left:0px;
-	width:100%;
-	background-color: white;
-}
-
-em
-{
-	text-decoration: underline;
-	font-style:normal;
-}
-
-/* Header */
-
-#top-page
-{
-	border-bottom: 2px solid black;
-}
-
-#logo-langka
-{
-	float:left;
-}
-
-/* Navigation */
-
-nav
-{
-	display: block;
-	position:absolute;
-	right:0px;
-	bottom:0px;
-}
-
-nav ul
-{
-	display: flex;
-	justify-content: flex-end;
-	font-size: 1.5em;
-	margin-bottom:0px;
-	margin-top:0px;
-
-}
-
-nav li
-{
-	margin-bottom: 5px;
-	padding: 5px;
-}
-
-nav .current a
-{
-	padding: 5px;
-	background-color: rgb(255,160,15);
-	font-weight: 600;
-	color: rgb(255,255,244);
-}
-
-nav .nav-item a
-{
-	padding: 5px;
-}
-
-nav .nav-item a:hover
-{
-	background-color: rgb(242,230,209);
-}
-
-
-/* Body Général */
-
-body
-{
-	margin:0px;
-	padding: 0px;
-
-}
-
-h1
-{
-	text-align: center;
-	margin-bottom: 40px;
-	margin-top:0px;
-	padding:5px;
-	background-color: rgb(255,211,126);
-}
-
-#body-page
-{
-	padding-top:165px;
-	background: url("resources/images/background_transp.png") repeat top left;
-	margin:auto;
-}
-
-/* Index */
-
-	#index-body {
-		width: 70%;
-		margin:auto;
-		padding-bottom: 20px;
-	}
-
-	#index-body h2 {
-		text-align: center;
-	}
-
-	#index-body p {
-		margin-bottom:0px;
-	}
-
-/* A propos */
-
-	#about
-	{
-		margin:auto;
-		width:70%;
-	}
-
-	#about1
-	{
-		
-		min-width:295px;
-		text-align: justify;
-	}
-
-	#about-experience {
-		min-width:300px;
-	}
-
-	#about-languages {
-		min-width:300px;
-	}
-
-	#about-formations {
-		min-width:300px;
-	}
-
-	#about-formations ul
-	{
-		margin-bottom:0px;
-	}
-
-/* Contact */
-
-	#contact-body
-	{
-		display:flex;
-		flex-wrap: nowrap;
-		flex-direction: row;
-		justify-content: space-around;
-		width:70%;
-		margin:auto;
-	}
-
-	#contact-left
-	{
-		display:flex;
-		flex-direction: column;
-	}
-
-	#contact-text
-	{
-		margin-bottom:0px;
-	}
-
-	#contact-text li
-	{
-		padding-bottom:15px;
-	}
-
-	.contact-data
-	{
-		border-bottom:1px solid black;
-		margin-bottom:15px;
-	}
-
-	#contact-social
-	{
-		display:flex;
-		margin-top:5px;
-	}
-
-	#contact-social li
-	{
-		padding-right:15px;
-	}
-
-/* Form */
-
-	#civ-label
-	{
-		display:inline-block;
-		width:150px;
-	}
-
-	#contact-info label
-	{
-		display : block;
-		width:150px;
-		float:left;
-	}
-
-	input
-	{
-		margin-bottom:5px;
-	}
-
-	#send
-	{
-		margin-top:20px;
-	}
-
-	#message
-	{
-		width:100%;
-		height:300px;
-	}
-
-	form p
-	{
-		margin-bottom:5px;
-		margin-top:0px;
-	}
-
-	#form-commentaire
-	{
-		margin-bottom:10px;
-		font-size:0.8em;
-	}
-
-/* Footer */
-
-	footer
-	{
-		background-color: rgb(255,211,126);
-	}
-
-	#foot_flex
-	{
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: center;
-		margin:auto;
-		width:1000px;
-	}
-
-	.foot_el
-	{
-		font-size: 0.8em;
-		width:300px;
-	}
-
-	h6
-	{
-		font-size: 1em;
-		text-decoration: underline;
-		font-weight: normal;
-		margin:0px;
-		text-align: center;
-	}
-
-	#sitemap-header
-	{
-		padding-right:80px;
-		text-align: right;
-	}
-
-	#sitemap
-	{
-		padding-left:152px;
-	}
-
-	#foot_contact, #foot-contact-header
-	{
-		padding-left:80px;
-		text-align: left;
-	}
-
-	footer a:hover
-	{
-		color:rgb(50,50,50);
-	}
-
-	.social_media ul
-	{
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: center;
-	}
-
-	.social_media img
-	{
-		padding-right: 10px;
-	}
-
-	#copy
-	{
-		font-size: 0.7em;
-		background-color: white;
-		padding-left: 10px;
-	}
-
-	#copy p
-	{
-		margin-top:0px;
-		text-align: center;
-	}
+  html, body {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    font-family: Roboto;
+    margin:0;
+    padding:0;
+    z-index:1;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  --primary-color: #ffe7b9;
+  --secondary-color:#ffa00f;
+
+/* Header & Nav */
+
+  nav {
+    position :fixed;
+    top:0;
+    right:0;
+    width:100%;
+    font-size: 1.6em;
+    background-color: white;
+    border-bottom: solid 3px #ffa00f;
+    z-index:5;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align:right;
+  }
+
+  .nav-item {
+    display: inline-block;
+    padding: 7px;
+    border-radius: 2px;
+  }
+
+  .nav-item:hover {
+    animation-name: background-fade;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes background-fade {
+    100% {
+      background-color:#ffe7b9;
+    }
+  }
+
+/* Welcome section */
+
+  #welcome-section {
+    height: 100vh;
+    background-image: url("https://i.postimg.cc/Jh8FJcJL/background-transp.png");
+    width:100%;
+    background-size: 5000px;
+  }
+
+  #horizontal-bar {
+    position: absolute;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(#ffe7b9 45%, #ffd37e, #ffe7b9 55%);
+    background-size: 200% 200%;
+    z-index:-1;
+    animation-name: upping;
+    animation-timing-function: cubic-bezier(.46,.13,.82,.06);
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+  }
+
+  @keyframes upping {
+    0% {
+      background-position:-20% -20%;
+    }
+    100% {
+      background-position: 120% 120%;
+    }
+  }
+
+  h1 {
+    margin:0;
+    padding-top: 320px;
+    text-align: center;
+    font-size: 5em;
+  }
+
+  h2 {
+    padding-top:50px;
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    color: #1c1c1c;
+  }
+
+/* Projects section */
+
+  #projects {
+    background-color: white;
+    border-top: solid 3px #ffa00f;
+    border-bottom: solid 3px #ffa00f;
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+
+  .project-group {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
+    grid-column-gap: 15px;
+    margin:auto;
+  }
+
+  .project-tile {
+    display: grid;
+    grid-template-rows: 16vw 4vw;
+    grid-row-gap: 10px;
+    background-color: black;
+  }
+
+  .project-thumbnail {
+    width: calc(100vw/5);
+    min-width: 197px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .project-title {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1.5em;
+  }
+
+  .project-title:hover {
+    animation-name: project-title-anim;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes project-title-anim {
+    100% {
+      background-color: #1c1c1c;
+      font-size: 1.7em;
+    }
+  }
+
+/* Contact section */
+
+  #contact-section {
+    background-color: #1c1c1c;
+    color: white;
+    padding-top: 50px;
+  }
+
+  h4 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #social-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-flex {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 50px;
+    margin: 10px;
+  }
 
 /* Responsive */
 
-@media (max-width:1140px) {
-	#contact-body {
-		flex-direction: column;
-	}
+  @media (max-width: 500px) {
+    h1 {
+      padding-top: 100px;
+    }
+    
+    h2 {
+      font-size: 3.5em;
+    }
+    
+    .project-group {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin:auto;
+    }
 
-	#contact-text, #contact-social, form {
-		margin:auto;
-	}
+    .project-tile {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      width: 250px;
+      height: 230px;
+      margin:auto;
+      margin-bottom: 10px;
+      padding-top: 27px;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px red;
+    }
 
-	.contact-data {
-		width:378px;
-	}
+    .project-thumbnail {
+      width: 197px;
+    }
 
-	#contact-social {
-		padding-bottom: 50px;
-	}
-}
+    .project-title {
+      width:100%;
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-size: 1.5em;
+    }
+  }
