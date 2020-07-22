@@ -126,6 +126,26 @@
     color: white;
   }
 
+  #filter-div {
+  	display: flex;
+  	justify-content: space-between;
+  	width: 600px;
+  }
+
+  .filter-tag {
+  	height: 40px;
+  	line-height: 40px;
+  	width: 100px;
+  	padding: 5px;
+  	background-color: var(--primary-color);
+  	border-radius: 5px;
+  }
+
+  #decorative-line {
+  	background-color: black;
+  	transform: skewX(-10deg);
+  }
+
   #project-showcase {
     width: 100%;
     display: flex;
@@ -159,7 +179,7 @@
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
-  	top:-275px;
+  	top:-276px;
   	background-color: rgba(0,0,0,0.9);
   }
 
@@ -198,7 +218,6 @@
   	margin-left: auto;
   	background-color: var(--primary-color);
   	border-radius: 5px;
-  	border: none;
   	text-transform: uppercase;
   }
 
