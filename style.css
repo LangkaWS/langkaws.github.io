@@ -23,14 +23,14 @@
 
 /* Header & Nav */
 
-  nav {
+  #navbar {
     position :fixed;
     top:0;
     right:0;
     width:100%;
     font-size: 1.6em;
     background-color: white;
-    border-bottom: solid 3px #ffa00f;
+    border-bottom: solid 3px var(--secondary-color, #000000);
     z-index:5;
   }
 
