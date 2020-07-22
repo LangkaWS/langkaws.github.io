@@ -6,6 +6,7 @@
 	--primary-color: #ffe7b9;
   	--secondary-color:#ffa00f;
   	--tertiary-color: #1c1c1c;
+  	--darker-ternary-color: #292929;
 }
 
   html, body {
@@ -165,12 +166,34 @@
   	display: none;
   	position: relative;
   	top:-275px;
+  	background-color: rgba(0,0,0,0.9);
   	border: solid green 1px;
   }
 
   .project-description {
-  	background-color: rgba(0,0,0,0.8);
+  	color: white;
   	height: 200px;
+  }
+
+  .project-tag {
+  	height: 50px;
+  	display: flex;
+  	justify-content: space-between;
+  	margin-left: auto;
+  	margin-right: auto;
+  	border: solid orange 1px;
+  }
+
+  .tag {
+  	background-color: var(--darker-ternary-color);
+  	color: white;
+  	height: 30px;
+  	border-radius: 2%;
+  	box-shadow: 2px black;
+  }
+
+  .go-to-project {
+  	height: 25px;
   }
 
   .project-tile:hover .project-description {
