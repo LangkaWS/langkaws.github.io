@@ -143,6 +143,18 @@
   	text-align: center;
   }
 
+  .btn {
+  	background-color: red;
+  }
+
+  .btn:hover {
+  	background-color: pink;
+  }
+
+  .btn:active {
+  	background-color: yellow;
+  }
+
 
 
   #decorative-line {
