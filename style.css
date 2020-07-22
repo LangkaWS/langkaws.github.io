@@ -164,16 +164,16 @@
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
-  	top:-272px;
+  	top:-275px;
   	border: solid green 1px;
   }
 
   .project-description {
-  	background-color: red;
+  	background-color: rgba(0,0,0,0.8);
   	height: 200px;
   }
 
-  .project-link:hover + .project-description {
+  .project-link:hover .project-description {
   	display: block;
   }
 
