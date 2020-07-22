@@ -156,10 +156,6 @@
   	font-size: 1.1rem;
   }
 
-  .project-thumbnail {
-    border: solid yellow 1px;
-  }
-
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
@@ -175,22 +171,18 @@
   .project-tags {
   	height: 50px;
   	justify-content: center;
-  	border: solid orange 1px;
   }
 
   .tag {
   	background-color: var(--darker-ternary-color);
   	color: white;
   	height: 30px;
+  	line-height: 30px;
   	margin-left: 5px;
   	margin-right: 5px;
-  	border-radius: 18%;
+  	padding: 0px 5px;
+  	border-radius: 5px;
   	box-shadow: 2px 2px black;
-  }
-
-  .tag span {
-  	vertical-align:middle;
-  	padding: 0 5px;
   }
 
   .go-to-project {
@@ -198,13 +190,14 @@
   }
 
   .go-to-btn {
-  	height: 30px;
+  	height: 25px;
+  	line-height: 25px;
   	width: 100px;
   	padding: 5px;
   	margin-right: auto;
   	margin-left: auto;
   	background-color: var(--primary-color);
-  	border-radius: 8%;
+  	border-radius: 5px;
   	border: none;
   	text-transform: uppercase;
   }
@@ -215,10 +208,10 @@
   }
 
   .external-link-icon {
-  	height: 10px;
-	width: 10px;
+  	height: 12px;
+	width: 12px;
   	fill: white;
-  	vertical-align: middle;
+  	padding: 0px 5px;
   }
 
   .project-tile:hover .project-description, .project-tile:hover .go-to-project {
