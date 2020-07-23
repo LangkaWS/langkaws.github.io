@@ -237,9 +237,12 @@
     		function filterProjects(c) {
     			var x, i;
     			x = document.getElementsByClassName("filterDiv");
+    			y = document.getElementsByClassName("show");
+    			for(i = 0; i < y.length; i++) {
+    				y[i].style.animation = "disappear 0.3s forwards";
+    			}
     			if(c == "all") c = "";
     			for(i = 0; i < x.length; i++) {
-    				x[i].style.animation = "disappear 0.3s forwards";
     				removeClass(x[i], "show");
     				if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
     			}
