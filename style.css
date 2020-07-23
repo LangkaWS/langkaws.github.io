@@ -36,7 +36,7 @@
     top: 0;
     left: 0;
     z-index: 6;
-    height: 50px;
+    height: 70px;
   }
 
   #navbar {
@@ -44,7 +44,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 50px;
+    height: 70px;
     font-size: 1.5rem;
     background-color: var(--white-color);
     border-bottom: solid 3px var(--secondary-color);
@@ -196,12 +196,14 @@
     width: 385px;
     height: 350px;
     margin: 20px 0px;
+    overflow: hidden;
   }
 
   .project-title {
   	height: 75px;
     text-align: center;
     color: var(--white-color);
+    z-index: 9;
   }
 
   h4 {
@@ -216,10 +218,10 @@
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
-    top: -552px;
+    top: -627px;
   	background-color: rgba(0,0,0,0.9);
     animation-name: slide-down;
-    animation-timing-function: cubic-bezier(.46,.13,.82,.06);
+    animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -308,7 +310,7 @@
   }
 
   #photo {
-    width: 180px;
+    height: 230px;
   }
 
   #photo-div {
@@ -337,6 +339,10 @@
     text-justify: inter-word;
   }
 
+  strong {
+    font-size: 1.5rem;
+  }
+
 /* Contact section */
 
   #contact-section {
@@ -347,7 +353,7 @@
     font-size: 1.5rem;
     color: var(--black-color);
     width: 80%;
-    margin-top: 50px auto;
+    margin: 50px auto;
   }
 
   #contact-form {
