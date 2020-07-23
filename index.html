@@ -240,6 +240,7 @@
     			if(c == "all") c = "";
     			for(i = 0; i < x.length; i++) {
     				removeClass(x[i], "show");
+    				x.style.animation = "disappear 0.3s forwards"
     				if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
     			}
     		}
