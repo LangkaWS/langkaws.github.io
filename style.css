@@ -171,8 +171,6 @@
     font-size: 1.2rem;
   }
 
-
-
   .active {
   	background-color: var(--secondary-color);
   }
@@ -185,10 +183,6 @@
     flex-wrap: wrap-reverse;
     overflow: hidden;
     margin: auto;
-  }
-
-  .filterDiv {
-  	display: none;
   }
 
   .show {
