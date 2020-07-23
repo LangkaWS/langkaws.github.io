@@ -171,12 +171,6 @@
     font-size: 1.2rem;
   }
 
-  .filter-tag:active .show {
-    animation-name: disappear;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-  }
-
   @keyframes disappear {
     100% {
       height: 0px;
