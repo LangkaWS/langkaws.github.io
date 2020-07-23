@@ -36,7 +36,7 @@
     top: 0;
     left: 0;
     z-index: 6;
-    height: 70px;
+    height: 130px;
   }
 
   #navbar {
@@ -44,7 +44,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 70px;
+    height: 120px;
     font-size: 1.5rem;
     background-color: var(--white-color);
     border-bottom: solid 3px var(--secondary-color);
@@ -54,6 +54,7 @@
   nav ul {
     list-style: none;
     text-align: right;
+    bottom: 0;
   }
 
   .nav-item {
@@ -215,11 +216,12 @@
   	font-size: 1.1rem;
   }
 
-  .project-description, .project-tags, .go-to-project {
-  	display: none;
-  	position: relative;
-    top: -627px;
-  	background-color: rgba(0,0,0,0.9);
+  .slider {
+    display: none;
+    position: relative;
+    top: -276px;
+    height: 0px;
+    background-color: rgba(0,0,0,0.9);
     animation-name: slide-down;
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
@@ -228,16 +230,18 @@
 
   @keyframes slide-down {
     100% {
-      top: -276px;
+      height: 276px;
     }
   }
 
   .project-description {
+    display: block;
   	color: var(--white-color);
   	height: 175px;
   }
 
   .project-tags {
+    display: flex;
   	height: 50px;
   	justify-content: center;
   }
@@ -255,6 +259,7 @@
   }
 
   .go-to-project {
+    display:block;
   	height: 50px;
   }
 
@@ -282,12 +287,8 @@
   	padding: 0px 5px;
   }
 
-  .project-tile:hover .project-description, .project-tile:hover .go-to-project {
+  .project-tile:hover #slider {
   	display: block;
-  }
-
-  .project-tile:hover .project-tags {
-  	display: flex;
   }
 
 /* About section */
@@ -304,9 +305,7 @@
   }
 
   #about-div {
-    display: flex;
     margin: auto;
-    justify-content: ;
   }
 
   #photo {
@@ -323,7 +322,6 @@
   }
 
   #photo-div-border {
-    float: left;
     width: 186px;
     height: 236px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%, 25% 0%);
