@@ -35,6 +35,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 6;
+    height: 50px;
   }
 
   #navbar {
@@ -42,7 +44,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 170px;
+    height: 50px;
     font-size: 1.5rem;
     background-color: var(--white-color);
     border-bottom: solid 3px var(--secondary-color);
@@ -214,6 +216,7 @@
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
+    top: -552px;
   	background-color: rgba(0,0,0,0.9);
     animation-name: slide-down;
     animation-timing-function: cubic-bezier(.46,.13,.82,.06);
@@ -294,13 +297,18 @@
   }
 
   #about-title {
-    color: var(--black-color);   
+    color: var(--black-color);
+    margin-top: 50px;
   }
 
   #about-div {
     display: flex;
     margin: auto;
     justify-content: ;
+  }
+
+  #photo {
+    width: 180px;
   }
 
   #photo-div {
@@ -321,10 +329,10 @@
   }
 
   #about-text {
-    line-height: 1.5;
+    line-height: 1.7;
     margin: auto;
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -338,6 +346,8 @@
   #contact-title {
     font-size: 1.5rem;
     color: var(--black-color);
+    width: 80%;
+    margin-top: 50px auto;
   }
 
   #contact-form {
@@ -431,6 +441,7 @@
     background-color: var(--tertiary-color);
     font-size: 0.8rem;
     color: var(--white-color);
+    text-align: right;
   }
 
 /* Responsive */
