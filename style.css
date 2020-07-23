@@ -164,7 +164,6 @@
   	width: 100px;
   	padding: 5px;
   	background-color: var(--primary-color);
-  	border-radius: 5px;
   	text-align: center;
   	border: none;
     transform: skewX(65deg);
@@ -192,6 +191,19 @@
 
   .show {
   	display: block;
+    overflow: hidden;
+    animation-name: appear;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 100px;
+    }
   }
 
   .project-tile {
