@@ -130,7 +130,7 @@
     background-color: var(--tertiary-color);
     border-top: solid 3px var(--secondary-color);
     border-bottom: solid 3px var(--secondary-color);
-    padding: 100px 0;
+    padding: 110px 0px;
     width: 100%;
   }
 
@@ -325,12 +325,11 @@
     margin-left: 50px;
     margin-right: 50px;
     min-height: 320px;
-    padding: 50px 0px;
+    padding: 110px 0px;
   }
 
   #about-title {
     color: var(--black-color);
-    margin-top: 50px;
   }
 
   #about-div {
@@ -390,14 +389,14 @@
 /* Contact section */
 
   #contact-section {
-    padding-top: 100px 0px;
+    padding-top: 110px 0px;
   }
 
   #contact-title {
     font-size: 1.5rem;
     color: var(--black-color);
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
   }
 
   #contact-form {
