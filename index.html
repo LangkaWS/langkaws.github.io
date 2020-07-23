@@ -235,18 +235,15 @@
 			<script>
         	filterProjects("all")
     		function filterProjects(c) {
-    			var x, y, i;
+    			var x, i;
     			x = document.getElementsByClassName("filterDiv");
-    			y = document.getElementsByClassName("show");
-    			for(i = 0; i < y.length; i++) {
-    				y[i].style.animation = "disappear 0.3s forwards";
-    			}
     			if(c == "all") c = "";
     			for(i = 0; i < x.length; i++) {
     				removeClass(x[i], "show");
+    				addClass(x[i], "hide");
     				if(x[i].className.indexOf(c) > -1) {
     					addClass(x[i], "show");
-    					x[i].style.animation = "appear 0.3s forwards";
+    					removeClass(x[i], "hide");
     				}
     			}
     		}

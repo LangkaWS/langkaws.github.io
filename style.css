@@ -171,14 +171,7 @@
     font-size: 1.2rem;
   }
 
-  @keyframes disappear {
-    0% {
-      height: 350px;
-    }
-    100% {
-      height: 0px;
-    }
-  }
+
 
   .active {
   	background-color: var(--secondary-color);
@@ -212,6 +205,22 @@
     }
     100% {
       height: 350px;
+    }
+  }
+
+  .hide {
+    overflow: hidden;
+    animation-name: disappear;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes disappear {
+    0% {
+      height: 350px;
+    }
+    100% {
+      height: 0px;
     }
   }
 
