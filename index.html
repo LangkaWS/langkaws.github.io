@@ -32,12 +32,13 @@
 		<section id="projects">
 		  <h3>Web development portfolio</h3>
 
-		  <div id="filter-div">
-		  	<button type="button" class="filter-tag btn active" id="filter-all" onClick="filterProjects('all')">All</button>
-		  	<button type="button" class="filter-tag btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
-		  	<button type="button" class="filter-tag btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
-		  	<div id="decorative-line"></div>
-		  </div>
+       <div id="filter-container">
+        <div id="filter-div">
+          <button type="button" class="filter-tag btn active" id="filter-all" onClick="filterProjects('all')">All</button>
+          <button type="button" class="filter-tag btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
+          <button type="button" class="filter-tag btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
+        </div>
+      </div>
 
 		  	<div id="project-showcase">
 
@@ -133,27 +134,77 @@
 		</section>
 
 		<section id="about">
+      <h3 id="about-title">About Me</h3>
+      <div id="photo-div-border">
+        <div id="photo-div">
+          <img src="" id="photo"/>
+        </div>
+      </div>
+      <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada dolor ligula, quis efficitur odio mollis ut. Quisque convallis pharetra nulla, a bibendum eros. Aliquam non eros vitae arcu commodo consectetur ac ac ex. Curabitur mi odio, euismod eget ipsum id, pulvinar mattis eros. Suspendisse vel faucibus nibh.<br />
+
+Mauris scelerisque, est in tincidunt efficitur, sapien risus aliquet neque, vitae varius quam ipsumvel sem. Aenean auctor metus sed est tincidunt luctus. Donec elit arcu,condimentum id nunc sit amet, aliquam tincidunt orci.<br />
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel placerat nibh. Mauris massa sapien, lacinia et venenatis vel, posuere eget velit. Ut sagittis elit sit amet tortor dignissim, et bibendum velit aliquam. Proin vestibulum ante et velit tristique, sed egestas ipsum pellentesque.</p> 
 		</section>
 
 		<section id="contact-section">
-		  <h3>Do you want to stay in touch ?</h3>
-		    <div id="social-container">
-		      <div class="social-flex">
-		        <h4>Follow me :</h4>
-		        <a href="https://github.com/LangkaWS" target="_blank"><img src="https://i.postimg.cc/qRk3VcMJ/Git-Hub-Mark-Light-120px-plus.png" id="github-logo" class="logo"></a>
-		        <a href="#" target="_blank"><img src="https://i.postimg.cc/vmDmWPB6/LI-In-Bug.png" id="linked-in-logo" class="logo"></a>
-		        <a href="https://codepen.io/LangkaWS" target="_blank" id="profile-link"><img src="https://i.postimg.cc/DwxZ4V2T/Button-White-Large.png" id="codepen-logo" class="logo"></a>
-		      </div>
-		      <div class="social-flex">
-		        <h4>Contact me :</h4>
-		        <a href="mailto:langkaws@outlook.com" target="_blank"><img src="https://i.postimg.cc/0QdhrvsG/at-sign.png" id="email-logo" class="logo"></a>
-		      </div>
-		    </div>
+		  <h3 id="contact-title">If you wanna contact me, discuss about your projects, or just talk, leave me a message in the form below or send me an email.</h3>
+      
+      <form id="contact-form" action="https://formspree.io/xaypaerb" method="POST">
+        
+        <input type="hidden" name="_subject" value="New submission!" />
+        
+        <label for="mrs" class="label-text"><input type="radio" id="mrs" value="mrs" name="radio" required />Mrs</label>
+        <label for"mr" class="label-text"><input type="radio" id="mr" value="mr" name="radio" required />Mr.</label><br /><br />
+        
+        <label for="firstname" id="firstname-label" class="label-text">First Name *</label><br />
+        <input type="text" name="firstname" id="firstname" class="input-field" required/><br /><br />
+        
+        <label for="lastname" id="lastname-label" class="label-text">Last Name *</label><br />
+        <input type="text" name="lastname" id="lastname" class="input-field" required/><br /><br />
+        
+        <label for="society" id="society-label" class="label-text">Society (optional)</label><br />
+        <input type="text" name="society" id="society" class="input-field" /><br /><br />
+        
+        <label for="email" id="email-label" class="label-text">Email *</label><br />
+        <input type="email" name="email" id="email" class="input-field" required/><br /><br />
+        
+        <label for="dropdown" id="dropdown-label" class="label-text">Subject *</label><br />
+        <select id="dropdown" name="dropdown" onChange="displayTextField()">
+          <option value="" disabled selected>Please select a subject</option>
+          <option value="job-offer">Job offer</option>
+          <option value="project">Project</option>
+          <option value="feedback">Feedback</option>
+          <option value="help">Question/help</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+        
+        <div id="subject-other-div" class="label-text">
+          <label for="subject-other" id="subject-other-label">Please specify:</label><br />
+          <input type="text" name="subject-other" id="subject-other" class="input-field" /><br /><br />
+        </div>
+        
+        <label for="message" id="message-label" class="label-text">Message *</label><br />
+        <textarea name="message" id="message" class="input-field"></textarea><br /><br />
+        
+        <label for="personal-data-statement" id="personal-data-statement-label"><input type="checkbox" id="personal-data-statement" name="personal-data-statement" value="true" required/>I agree that the personal data provided will be processed in the context of current correspondence.</label>
+        
+        <button type="submit" id="submit-btn">Send</button>
+        
+      </form>
+      
+		  <div id="social-container">
+        <a href="https://github.com/LangkaWS" target="_blank"><img src="https://i.postimg.cc/qRk3VcMJ/Git-Hub-Mark-Light-120px-plus.png" id="github-logo" class="logo"></a>
+        <a href="#" target="_blank"><img src="https://i.postimg.cc/vmDmWPB6/LI-In-Bug.png" id="linked-in-logo" class="logo"></a>
+        <a href="https://codepen.io/LangkaWS" target="_blank" id="profile-link"><img src="https://i.postimg.cc/DwxZ4V2T/Button-White-Large.png" id="codepen-logo" class="logo"></a>
+        <a href="mailto:langkaws@outlook.com" target="_blank"><img src="https://i.postimg.cc/0QdhrvsG/at-sign.png" id="email-logo" class="logo"></a>
+      </div>
+
 		</section>
 
 
 		<footer id="footer">
-			<div id="copy"><p>&copy; 2020 Langka WebStudio. Tous droits r&eacute;serv&eacute;s.</p></div>
+			<div id="copy"><p>&copy; 2020 Langka WebStudio. All rights reserved.</p></div>
 			<script>
         	filterProjects("all")
     		function filterProjects(c) {
@@ -198,6 +249,15 @@
     				this.className += " active";
     			});
     		}
+        
+        function displayTextField() {
+          var dropdownText = document.getElementById("dropdown").value;
+          if(dropdownText == "other") {
+            document.getElementById("subject-other-div").style.display = "block";
+          } else {
+            document.getElementById("subject-other-div").style.display = "none";
+          }
+        }
     	</script>
 		</footer>
     </body>
