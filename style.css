@@ -301,6 +301,7 @@
 
   #about-text {
     line-height: 1.5;
+    margin: 0px 20px;
   }
 
 /* Contact section */
@@ -379,16 +380,16 @@
     margin-right: calc(300px/2);
   }
 
-#submit-btn:hover {
-  background-color: var(--darker-secondary-color);
-}
+  #submit-btn:hover {
+    background-color: var(--darker-secondary-color);
+  }
 
-#submit-btn:active {
-  position: relative;
-  top: 2px;
-  left: 2px;
-  box-shadow: none;
-}
+  #submit-btn:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+  }
 
   #social-container {
     display: flex;
@@ -401,11 +402,11 @@
     margin: 20px;
   }
 
-#copy {
-  background-color: var(--tertiary-color);
-  font-size: 0.8rem;
-  color: var(--white-color);
-}
+  #copy {
+    background-color: var(--tertiary-color);
+    font-size: 0.8rem;
+    color: var(--white-color);
+  }
 
 /* Responsive */
 
