@@ -157,6 +157,7 @@
   	border: none;
     transform: skewX(65deg);
     margin-top: -10px;
+    font-size: 1.2rem;
   }
 
   .active {
@@ -185,6 +186,7 @@
     background-color: var(--black-color);
     width: 385px;
     height: 350px;
+    margin: 20px 0px;
   }
 
   .project-title {
@@ -195,6 +197,7 @@
 
   h4 {
   	font-size: 1.5rem;
+    margin-top: 5px;
   }
 
   h5 {
@@ -204,8 +207,16 @@
   .project-description, .project-tags, .go-to-project {
   	display: none;
   	position: relative;
-  	top: -276px;
   	background-color: rgba(0,0,0,0.9);
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-down {
+    100% {
+      top: -276px;
+    }
   }
 
   .project-description {
@@ -302,6 +313,7 @@
   #about-text {
     line-height: 1.5;
     margin: 0px 20px;
+    width: 50%;
   }
 
 /* Contact section */
