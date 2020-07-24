@@ -34,9 +34,9 @@
   #logo-langka {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 5px;
     z-index: 6;
-    height: 130px;
+    height: 750px;
   }
 
   #navbar {
@@ -44,7 +44,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 110px;
+    height: 80px;
     font-size: 2rem;
     background-color: var(--white-color);
     border-bottom: solid 3px var(--secondary-color);
@@ -130,7 +130,7 @@
     background-color: var(--tertiary-color);
     border-top: solid 3px var(--secondary-color);
     border-bottom: solid 3px var(--secondary-color);
-    padding: 110px 0px;
+    padding: 100px 0px;
     width: 100%;
   }
 
@@ -246,28 +246,18 @@
   }
 
   #slider {
-    display: none;
+    display: block;
     position: relative;
     top: -552px;
     background-color: rgba(0,0,0,0.9);
-    animation-name: slide-down;
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-	  transition: 1s ease-in-out;
-  }
-
-  @keyframes slide-down {
-    100% {
-      top: -276px;
-    }
+	transition: top 0.5s ease-in-out;
   }
 
   .project-description {
     display: block;
   	color: var(--white-color);
-  	height: 175px;
-	margin: 20px 40px;
+  	height: 145px;
+	padding: 20px 40px 40px 10px;
 	text-align: justify;
     text-justify: inter-word;
 	line-height: 1.3rem;
@@ -321,7 +311,7 @@
   }
 
   .project-tile:hover #slider {
-  	display: block;
+  	top: -276px;
   }
 
 /* About section */
@@ -330,7 +320,7 @@
     margin-left: 50px;
     margin-right: 50px;
     min-height: 320px;
-    padding: 110px 0px;
+    padding: 100px 0px;
   }
 
   #about-title {
@@ -394,7 +384,7 @@
 /* Contact section */
 
   #contact-section {
-    padding-top: 110px 0px;
+    padding-top: 100px 0px;
   }
 
   #contact-title {
