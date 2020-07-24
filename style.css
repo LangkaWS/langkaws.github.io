@@ -40,7 +40,7 @@
   }
 
   #navbar {
-    position :fixed;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -48,7 +48,7 @@
     font-size: 2rem;
     background-color: var(--white-color);
     border-bottom: solid 3px var(--secondary-color);
-    z-index:5;
+    z-index: 5;
   }
 
   nav ul {
@@ -224,7 +224,7 @@
     display: block;
   	color: var(--white-color);
   	height: 145px;
-	padding: 20px 40px 40px 10px;
+	padding: 20px 40px 10px 40px;
 	text-align: justify;
     text-justify: inter-word;
 	line-height: 1.3rem;
@@ -263,7 +263,7 @@
   	background-color: var(--primary-color);
   	border-radius: 5px;
   	text-transform: uppercase;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
   }
 
   .go-to-btn:hover {
@@ -352,7 +352,7 @@
 /* Contact section */
 
   #contact-section {
-    padding-top: 100px 0px;
+    padding-top: 100px;
   }
 
   #contact-title {
