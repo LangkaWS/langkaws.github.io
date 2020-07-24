@@ -71,12 +71,6 @@
     animation-fill-mode: forwards;
   }
 
-  @keyframes background-fade {
-    100% {
-      background-color: var(--primary-color);
-    }
-  }
-
 /* Welcome section */
 
   #welcome-section {
@@ -98,15 +92,6 @@
     animation-timing-function: cubic-bezier(.46,.13,.82,.06);
     animation-duration: 7s;
     animation-iteration-count: infinite;
-  }
-
-  @keyframes upping {
-    0% {
-      background-position:-20% -20%;
-    }
-    100% {
-      background-position: 120% 120%;
-    }
   }
 
   h1 {
@@ -193,29 +178,11 @@
     animation-fill-mode: forwards;
   }
 
-  @keyframes appear {
-    0% {
-      height: 0px;
-    }
-    100% {
-      height: 350px;
-    }
-  }
-
   .hide {
     overflow: hidden;
     animation-name: disappear;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-  }
-
-  @keyframes disappear {
-    0% {
-      height: 350px;
-    }
-    100% {
-      height: 0px;
-    }
   }
 
   .project-tile {
@@ -296,6 +263,7 @@
   	background-color: var(--primary-color);
   	border-radius: 5px;
   	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
   }
 
   .go-to-btn:hover {
@@ -487,6 +455,41 @@
     font-size: 0.8rem;
     color: var(--white-color);
     text-align: right;
+  }
+
+/* Animations */
+
+  @keyframes background-fade {
+    100% {
+      background-color: var(--primary-color);
+    }
+  }
+
+  @keyframes upping {
+    0% {
+      background-position:-20% -20%;
+    }
+    100% {
+      background-position: 120% 120%;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 350px;
+    }
+  }
+
+  @keyframes disappear {
+    0% {
+      height: 350px;
+    }
+    100% {
+      height: 0px;
+    }
   }
 
 /* Responsive */
