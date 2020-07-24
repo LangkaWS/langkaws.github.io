@@ -254,6 +254,7 @@
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+	  transition: 1s ease-in-out;
   }
 
   @keyframes slide-down {
@@ -266,6 +267,10 @@
     display: block;
   	color: var(--white-color);
   	height: 175px;
+	margin: 20px 40px;
+	text-align: justify;
+    text-justify: inter-word;
+	line-height: 1.3rem;
   }
 
   .project-tags {
@@ -397,6 +402,7 @@
     color: var(--black-color);
     width: 80%;
     margin: auto;
+    padding-bottom: 50px;
   }
 
   #contact-form {
