@@ -148,6 +148,20 @@ button:active {
 #output-div {
   text-align: center;
   font-size: 2rem;
+  width: 400px;
+  height: 70px;
+  line-height: 70px;
+  margin: 20px auto;
+}
+
+#output-text {
+  margin: 0px;
+}
+
+#check-img, #cancel-img {
+  height: 50px;
+  position: relative;
+  top: 10px;
 }
 
 #copy {
