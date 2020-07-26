@@ -14,5 +14,5 @@ function validSolution(board){
 }
 
 function isValid(row) {
-  return row.sort().join("") === "123456789" ? true : false;
+  return row.slice(0).sort().join("") === "123456789" ? true : false;
 }
