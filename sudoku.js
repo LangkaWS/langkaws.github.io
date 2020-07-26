@@ -7,12 +7,12 @@ function validSolution(board){
       columns[col].push(board[row][col]);
     }
   }
-  for (let digit = 1; digit <= 9; digit++) {
-    for(let i = 0; i < board.length; i++) {
-      if (board[i].filter(el => el === digit).length !== 1 || columns[i].filter(el => el === digit).length !== 1 || grid[i].filter(el => el === digit).length !== 1) {
-        return true;
-      }
-    }
-  }
-  return false;
+  
+  return board.every(el => isValid(el)) && columns.every(el => isValid(el)) && grid.every(el => isValid(el))
+        ? true
+        : false;
+}
+
+function isValid(row) {
+  return row.sort().join("") === "123456789" ? true : false;
 }
