@@ -28,3 +28,17 @@ function convertFromRoman(num) {
   }
   return decimalVal;
 }
+
+function printResultConvertToRoman() {
+  var input = document.getElementById("number-input").value;
+  var output = convertToRoman(input);
+  
+  document.getElementById("output-text-roman").innerHTML = output;
+}
+
+function printResultConvertFromRoman() {
+  var input = document.getElementById("roman-input").value;
+  var output = convertFromRoman(input);
+  
+  document.getElementById("output-text-number").innerHTML = output;
+}
