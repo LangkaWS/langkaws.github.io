@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Polus Interactive Map">
+    <meta name="author" content="LangkaWS">
+    <link rel="stylesheet" href="style.css">
+    <title>Polus Interactive Map</title>
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Among Us Interactive Map</h1>
+        <p class="subtitle">Created by LangkaWS</p>
+        <div>
+            <div class="submenu">
+                <h2>Map</h2>
+                <div class="map-name-container">
+                    <p class="map-name" onclick="displayMap('skeld')">The Skeld</p>
+                    <p class="map-name" onclick="displayMap('mira')">Mira HQ</p>
+                    <p class="map-name" onclick="displayMap('polus')">Polus</p>
+                </div>
+            </div>
+            <div id="mates-submenu">
+                <div class="submenu">
+                    <h2>Mates</h2>
+                    <div class="icon-container">
+                        <img src="resources/red-mate.webp" id="red-mate" class="mate-icon alive">
+                        <img src="resources/blue-mate.webp" id="blue-mate" class="mate-icon alive">
+                        <img src="resources/green-mate.webp" id="green-mate" class="mate-icon alive">
+                        <img src="resources/pink-mate.webp" id="pink-mate" class="mate-icon alive">
+                        <img src="resources/orange-mate.webp" id="orange-mate" class="mate-icon alive">
+                        <img src="resources/yellow-mate.webp" id="yellow-mate" class="mate-icon alive">
+                        <img src="resources/white-mate.webp" id="white-mate" class="mate-icon alive">
+                        <img src="resources/black-mate.webp" id="black-mate" class="mate-icon alive">
+                        <img src="resources/purple-mate.webp" id="purple-mate" class="mate-icon alive">
+                        <img src="resources/brown-mate.webp" id="brown-mate" class="mate-icon alive">
+                        <img src="resources/cyan-mate.webp" id="cyan-mate" class="mate-icon alive">
+                        <img src="resources/lime-mate.webp" id="lime-mate" class="mate-icon alive">
+                    </div>
+                </div>
+                <div class="submenu">
+                    <h2>Corpses</h2>
+                    <div class="icon-container">
+                        <img src="resources/red-dead.webp" id="red-dead" class="mate-icon dead">
+                        <img src="resources/blue-dead.webp" id="blue-dead" class="mate-icon dead">
+                        <img src="resources/green-dead.webp" id="green-dead" class="mate-icon dead">
+                        <img src="resources/pink-dead.webp" id="pink-dead" class="mate-icon dead">
+                        <img src="resources/orange-dead.webp" id="orange-dead" class="mate-icon dead">
+                        <img src="resources/yellow-dead.webp" id="yellow-dead" class="mate-icon dead">
+                        <img src="resources/white-dead.webp" id="white-dead" class="mate-icon dead">
+                        <img src="resources/black-dead.webp" id="black-dead" class="mate-icon dead">
+                        <img src="resources/purple-dead.webp" id="purple-dead" class="mate-icon dead">
+                        <img src="resources/brown-dead.webp" id="brown-dead" class="mate-icon dead">
+                        <img src="resources/cyan-dead.webp" id="cyan-dead" class="mate-icon dead">
+                        <img src="resources/lime-dead.webp" id="lime-dead" class="mate-icon dead">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reset-div">
+            <button class="reset-btn" onclick="reset()">Reset</button>
+        </div>
+        <div>
+            <p class="disclaimer">Disclaimer</p>
+            <p class="disclaimer-txt">This application is an unofficial fan app. LangkaWS is not related to with InnerSloth or people working at InnerSloth. This is a non-profit application, run by a fan and all materials on this app are for entertainment purposes only.</p>
+            <p class="disclaimer-txt">You can find more of my work on my website <a href="http://langkaws.github.io/" target="_blank">langkaws.github.io</a></p>
+            <p class="disclaimer-txt">All pictures come from <a href="https://among-us.fandom.com/" target="_blank">Among Us fandom wiki</a> and from memeymatt (from reddit)</p>
+        </div>
+    </div>
+
+    <div class="map-div">
+        <img src="resources/skeld-map.webp" id="skeld" class="map">
+        <img src="resources/mira-map.webp" id="mira" class="map">
+        <img src="resources/polus-map.png" id="polus" class="map">
+    </div>
+
+    <footer>
+        <script src="main.js"></script>
+        <script src="dragDrop.js"></script>
+    </footer>
+
+
+</body>
+
+</html>
