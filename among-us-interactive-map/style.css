@@ -87,6 +87,10 @@ body {
         border-radius: 5px;
     }
 
+    .interactive {
+        cursor: pointer;
+    }
+
 
 /* MATES STYLE */
 
