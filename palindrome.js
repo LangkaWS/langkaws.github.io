@@ -13,8 +13,8 @@ function printResult() {
   var output = document.getElementById("output-text");
 
   if(palindrome(input)) {
-    output.innerHTML = '<img src="/resources/images/check.png" id="check-img" /> This is a palindrome';
+    output.innerHTML = '<img src="./resources/images/check.png" id="check-img" /> This is a palindrome';
   } else {
-    output.innerHTML = '<img src="/resources/images/close.png" id="cancel-img" /> This is not a palindrome';
+    output.innerHTML = '<img src="./resources/images/close.png" id="cancel-img" /> This is not a palindrome';
   }
 }

@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  text-color: white;
+  color: white;
 }
 
 a:visited {
@@ -163,15 +163,6 @@ button:active {
   position: relative;
   top: 10px;
 }
-
-#copy {
-    position: fixed;
-  bottom: 0;
-  right: 10%;
-    font-size: 0.8rem;
-    color: var(--white-color);
-    text-align: right;
-  }
 
 /* Animations */
 
