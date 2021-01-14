@@ -31,7 +31,7 @@
 
 /* Header & Nav */
   
-  #logo-langka {
+  .logo-langka {
     position: fixed;
     top: 0;
     left: 5px;
@@ -39,7 +39,7 @@
     height: 75px;
   }
 
-  #navbar {
+  nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -73,14 +73,14 @@
 
 /* Welcome section */
 
-  #welcome-section {
+  .welcome {
     height: 100vh;
     background-image: url("/resources/images/background-transp.png");
     width:100%;
     background-size: 5000px;
   }
 
-  #horizontal-bar {
+  .hbar {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -111,7 +111,7 @@
 
 /* Projects section */
 
-  #projects {
+  .projects {
     background-color: var(--tertiary-color);
     border-top: solid 3px var(--secondary-color);
     border-bottom: solid 3px var(--secondary-color);
@@ -126,7 +126,7 @@
     color: var(--white-color);
   }
 
-  #filter-container {
+  .filter-container {
     background-color: var(--black-color);
     transform: skewX(-65deg);
     width: 700px;
@@ -136,14 +136,14 @@
     margin-bottom: 50px;
   }
 
-  #filter-div {
+  .filter-div {
   	display: flex;
   	justify-content: space-between;
   	width: 500px;
   	margin: auto;
   }
 
-  .filter-tag {
+  .filter-btn {
   	height: 40px;
   	line-height: 30px;
   	width: 100px;
@@ -160,7 +160,7 @@
   	background-color: var(--secondary-color);
   }
 
-  #project-showcase {
+  .project-showcase {
     width: 100%;
     display: flex;
     justify-content: space-around;
