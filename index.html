@@ -16,10 +16,10 @@
     <body>
 
     	<header>
-    		<img src="/resources/images/logo-langka.png" id="logo-langka" />
-		  	<nav id="navbar">
+    		<img src="resources/images/logo-langka.png" class="logo-langka" />
+		  	<nav>
 			    <ul>
-			      <li class="nav-item"><a href=#welcome-section>Home</a></li>
+			      <li class="nav-item"><a href=#welcome>Home</a></li>
 			      <li class="nav-item"><a href=#projects>Projects</a></li>
 			      <li class="nav-item"><a href=#about>About</a></li>
 			      <li class="nav-item"><a href=#contact-section>Contact</a></li>
@@ -27,26 +27,26 @@
 			</nav>
 		</header>
 
-		<section id="welcome-section">
-		  <div id="title">
+		<section id="welcome" class="welcome">
+		  <div>
 		    <h1>Hi I am Langka !</h1>
 		    <h2>I'm learning web development</h2>
 		  </div>
-		  <div id="horizontal-bar"></div>
+		  <div class="hbar"></div>
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="projects">
 		  <h3>Web development portfolio</h3>
 
-       <div id="filter-container">
-        <div id="filter-div">
-          <button type="button" class="filter-tag btn active" id="filter-all" onClick="filterProjects('all')">All</button>
-          <button type="button" class="filter-tag btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
-          <button type="button" class="filter-tag btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
-        </div>
-      </div>
+			<div class="filter-container">
+				<div class="filter-div">
+					<button type="button" class="filter-btn btn active" id="filter-all" onClick="filterProjects('all')">All</button>
+					<button type="button" class="filter-btn btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
+					<button type="button" class="filter-btn btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
+				</div>
+			</div>
 
-		  	<div id="project-showcase">
+		  	<div class="project-showcase">
 
 			   	<div class="project-tile filterDiv front-end">
 			   		<a href="https://codepen.io/LangkaWS/full/rNxOQre" target="_blank" class="project-link">
@@ -350,8 +350,7 @@
     			element.className = arr1.join(" ");
     		}
 
-    		var btnContainer = document.getElementById("filter-div");
-    		var btns = btnContainer.getElementsByClassName("btn");
+    		var btns = document.getElementsByClassName("filter-btn");
     		for(var i = 0; i < btns.length; i++) {
     			btns[i].addEventListener("click", function() {
     				var current = document.getElementsByClassName("active");
