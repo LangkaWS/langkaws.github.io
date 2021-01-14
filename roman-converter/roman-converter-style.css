@@ -118,6 +118,8 @@ button:active {
   border: solid 1px black;
   background-color: white;
   margin: 0px 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .output-box {
