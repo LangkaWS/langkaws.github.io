@@ -118,40 +118,11 @@ button:active {
   border: solid 1px black;
   background-color: white;
   margin: 0px 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .output-box {
   margin: 0px;
   color: black;
 }
-
-#copy {
-    position: fixed;
-  bottom: 0;
-  right: 10%;
-    font-size: 0.8rem;
-    color: var(--white-color);
-    text-align: right;
-  }
-
-/* Animations */
-
-/*
-
-@keyframes appear {
-  from {width: 0}
-  to {width: 500px}
-}
-
-@keyframes left-slash {
-  100% {
-    left: -220px;
-  }
-}
-
-@keyframes right-slash {
-  100% {
-    left: 220px;
-  }
-}
-*/
