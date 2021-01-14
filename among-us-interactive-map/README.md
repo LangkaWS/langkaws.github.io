@@ -8,5 +8,3 @@ I hope this tool will be helpful !
 
 ## Bugs and features
 If you find any bug or if you have a feature idea, please let me know !
-
-Also I would be grateful if you wouldn't copy my code and pretend it's yours... Thank you !
