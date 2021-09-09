@@ -1,0 +1,48 @@
+/* Normalization of HTML elements */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+:root {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+div {
+  display: block;
+}
+
+h3, h4 {
+  font-weight: initial;
+}
+
+input {
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+}

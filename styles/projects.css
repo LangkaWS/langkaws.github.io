@@ -1,0 +1,43 @@
+h2 {
+  background-color: unset;
+  color: unset;
+  font-family: "Roboto";
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.project-page__header {
+  margin: 30px 30px 0 30px;
+}
+
+.back-arrow {
+  color: var(--light-color);
+  float: left;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 15px auto;
+}
+
+.valid-mark {
+  color: var(--valid);
+}
+
+.invalid-mark {
+  color: var(--invalid);
+}
+
+.output {
+  font-size: 1.2rem;
+  min-height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
