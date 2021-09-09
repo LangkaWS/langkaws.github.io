@@ -1,0 +1,31 @@
+.explanation {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.d-table {
+  display: table;
+  max-width: 540px;
+  margin: auto;
+  box-sizing: content-box;
+}
+
+.d-cell {
+  display: table-cell;
+  width: calc(100%/9);
+  height: 0;
+  max-width: 60px;
+  max-height: 60px;
+  padding: calc(100%/18) 0;
+  text-align: center;
+  margin: 0;
+  border: solid 1px var(--dark-color-light);
+}
+
+.square__border-right {
+  border-right: solid 2px var(--dark-color);
+}
+
+.square__border-bottom {
+  border-bottom: solid 2px var(--dark-color);
+}

@@ -1,136 +1,43 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="resources/icons/icone-langkaws.png">
-    <link rel="stylesheet" href="sudoku/sudoku-style.css">
-    <title>Langka WebStudio | Web developer</title>
-    <script type="text/javascript" src="sudoku/sudoku.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/font-awesome.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/grid.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <link rel="stylesheet" href="styles/projects/sudoku-validator.css" />
+  <title>Aurore Weingartner - Sudoku validator</title>
 </head>
 
 <body>
-    <div id="back">
-        <a href="index.html#projects"><svg id="back-arrow" height="50" viewBox="0 0 511.995 511.995">
-                <path fill="#ffffff"
-                    d="m346.995 120.991h-207.782l10.342-41.367c1.523-6.152-.967-12.612-6.27-16.128-5.244-3.486-12.158-3.311-17.285.498l-120 90c-8.006 5.989-7.996 18.013 0 23.994l120 90c5.127 3.823 12.012 3.984 17.285.498 5.303-3.516 7.793-9.976 6.27-16.128l-10.342-41.367h207.781c41.367 0 75 33.647 75 75s-33.633 75-75 75h-60.998c-8.291 0-15 6.709-15 15v60c0 8.291 6.709 15 15 15h60.998c90.967 0 165-74.019 165-165s-74.033-165-164.999-165z"
-                    fill="url(#SVGID_1_)" />
-            </svg></a>
-    </div>
+
+  <header class="project-page__header">
+    <i id="js-back-arrow" class="fas fa-reply back-arrow"></i>
+  
     <h1>Sudoku validator</h1>
-    <p>Please complete the board:</p><br />
-    <fieldset>
-        <input type="number" id="sudoku11" min="1" max="9" required />
-        <input type="number" id="sudoku12" min="1" max="9" required />
-        <input type="number" id="sudoku13" min="1" max="9" required />
-        <input type="number" id="sudoku21" min="1" max="9" required />
-        <input type="number" id="sudoku22" min="1" max="9" required />
-        <input type="number" id="sudoku23" min="1" max="9" required />
-        <input type="number" id="sudoku31" min="1" max="9" required />
-        <input type="number" id="sudoku32" min="1" max="9" required />
-        <input type="number" id="sudoku33" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku41" min="1" max="9" required />
-        <input type="number" id="sudoku42" min="1" max="9" required />
-        <input type="number" id="sudoku43" min="1" max="9" required />
-        <input type="number" id="sudoku51" min="1" max="9" required />
-        <input type="number" id="sudoku52" min="1" max="9" required />
-        <input type="number" id="sudoku53" min="1" max="9" required />
-        <input type="number" id="sudoku61" min="1" max="9" required />
-        <input type="number" id="sudoku62" min="1" max="9" required />
-        <input type="number" id="sudoku63" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku71" min="1" max="9" required />
-        <input type="number" id="sudoku72" min="1" max="9" required />
-        <input type="number" id="sudoku73" min="1" max="9" required />
-        <input type="number" id="sudoku81" min="1" max="9" required />
-        <input type="number" id="sudoku82" min="1" max="9" required />
-        <input type="number" id="sudoku83" min="1" max="9" required />
-        <input type="number" id="sudoku91" min="1" max="9" required />
-        <input type="number" id="sudoku92" min="1" max="9" required />
-        <input type="number" id="sudoku93" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku14" min="1" max="9" required />
-        <input type="number" id="sudoku15" min="1" max="9" required />
-        <input type="number" id="sudoku16" min="1" max="9" required />
-        <input type="number" id="sudoku24" min="1" max="9" required />
-        <input type="number" id="sudoku25" min="1" max="9" required />
-        <input type="number" id="sudoku26" min="1" max="9" required />
-        <input type="number" id="sudoku34" min="1" max="9" required />
-        <input type="number" id="sudoku35" min="1" max="9" required />
-        <input type="number" id="sudoku36" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku44" min="1" max="9" required />
-        <input type="number" id="sudoku55" min="1" max="9" required />
-        <input type="number" id="sudoku66" min="1" max="9" required />
-        <input type="number" id="sudoku44" min="1" max="9" required />
-        <input type="number" id="sudoku55" min="1" max="9" required />
-        <input type="number" id="sudoku66" min="1" max="9" required />
-        <input type="number" id="sudoku44" min="1" max="9" required />
-        <input type="number" id="sudoku55" min="1" max="9" required />
-        <input type="number" id="sudoku66" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku74" min="1" max="9" required />
-        <input type="number" id="sudoku75" min="1" max="9" required />
-        <input type="number" id="sudoku76" min="1" max="9" required />
-        <input type="number" id="sudoku84" min="1" max="9" required />
-        <input type="number" id="sudoku85" min="1" max="9" required />
-        <input type="number" id="sudoku86" min="1" max="9" required />
-        <input type="number" id="sudoku94" min="1" max="9" required />
-        <input type="number" id="sudoku95" min="1" max="9" required />
-        <input type="number" id="sudoku96" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku17" min="1" max="9" required />
-        <input type="number" id="sudoku18" min="1" max="9" required />
-        <input type="number" id="sudoku19" min="1" max="9" required />
-        <input type="number" id="sudoku27" min="1" max="9" required />
-        <input type="number" id="sudoku28" min="1" max="9" required />
-        <input type="number" id="sudoku29" min="1" max="9" required />
-        <input type="number" id="sudoku37" min="1" max="9" required />
-        <input type="number" id="sudoku38" min="1" max="9" required />
-        <input type="number" id="sudoku39" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku47" min="1" max="9" required />
-        <input type="number" id="sudoku48" min="1" max="9" required />
-        <input type="number" id="sudoku49" min="1" max="9" required />
-        <input type="number" id="sudoku57" min="1" max="9" required />
-        <input type="number" id="sudoku58" min="1" max="9" required />
-        <input type="number" id="sudoku59" min="1" max="9" required />
-        <input type="number" id="sudoku67" min="1" max="9" required />
-        <input type="number" id="sudoku68" min="1" max="9" required />
-        <input type="number" id="sudoku69" min="1" max="9" required />
-    </fieldset>
-    <fieldset>
-        <input type="number" id="sudoku77" min="1" max="9" required />
-        <input type="number" id="sudoku78" min="1" max="9" required />
-        <input type="number" id="sudoku79" min="1" max="9" required />
-        <input type="number" id="sudoku87" min="1" max="9" required />
-        <input type="number" id="sudoku88" min="1" max="9" required />
-        <input type="number" id="sudoku89" min="1" max="9" required />
-        <input type="number" id="sudoku97" min="1" max="9" required />
-        <input type="number" id="sudoku98" min="1" max="9" required />
-        <input type="number" id="sudoku99" min="1" max="9" required />
-    </fieldset>
-    <button onClick="printResult()">Did I finish my sudoku?</button>
-    <div id="output-div">
-        <p id="output-text"></p>
-    </div>
+  </header>
+
+  <section class="section-body">
+    <p class="explanation">Remplissez les cases :</p>
+    <form id="js-board" class="d-table">
+        <button type="submit" id="js-submit-btn" class="btn btn-primary btn-submit"> Mon sudoku est-il valide ?</button>
+    </form>
+  </section>
+
+  <div id="js-output" class="output"></div>
 
 
-    <footer id="footer">
-        <div id="copy">
-            <p>&copy; 2020 Langka WebStudio. All rights reserved.</p>
-        </div>
-
-    </footer>
+  <footer>
+    <p class="copyright">
+      &copy; 2021 - Aurore Weingartner - Tous droits réservés.
+    </p>
+    <script src="scripts/projects/script.js"></script>
+    <script src="scripts/projects/sudoku-validator.js"></script>
+  </footer>
+  
 </body>
-
 </html>

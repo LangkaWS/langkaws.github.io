@@ -1,0 +1,14 @@
+.roman-converter__form {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-section {
+  margin-bottom: 40px;
+}
+
+.form__txt-input {
+  width: 100px;
+}

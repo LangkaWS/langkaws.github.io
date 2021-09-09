@@ -1,387 +1,332 @@
-<!--
-	Thanks for your visit !
-	My Website uses no CMS, fully hand coded by me.
- -->
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="resources/icons/icone-langkaws.png">
-		<link rel="stylesheet" href="style.css">
-        <title>Langka WebStudio | Web developer</title>
-    </head>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/font-awesome.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/grid.css" />
+  <link rel="stylesheet" href="styles/utils.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Aurore Weingartner</title>
+</head>
+<body>
 
-    <body>
+  <header class="main-page__header">
 
-    	<header>
-    		<img src="/resources/images/logo-langka.png" id="logo-langka" />
-		  	<nav id="navbar">
-			    <ul>
-			      <li class="nav-item"><a href=#welcome-section>Home</a></li>
-			      <li class="nav-item"><a href=#projects>Projects</a></li>
-			      <li class="nav-item"><a href=#about>About</a></li>
-			      <li class="nav-item"><a href=#contact-section>Contact</a></li>
-			    </ul>
-			</nav>
-		</header>
+    <div class="header__top">
+      <img src="resources/images/logo.svg"
+           class="header__logo" 
+           alt="logo" />
 
-		<section id="welcome-section">
-		  <div id="title">
-		    <h1>Hi I am Langka !</h1>
-		    <h2>I'm learning web development</h2>
-		  </div>
-		  <div id="horizontal-bar"></div>
-		</section>
+      <nav class="header__nav">
+          <a href="#skills" class="header__nav__link">Compétences</a>
+          <a href="#projects" class="header__nav__link">Projets</a>
+          <a href="#about" class="header__nav__link d-hidden d-medium">A&nbsp;propos</a>
+          <a href="#testimonials" class="header__nav__link d-hidden d-medium">Témoignages</a>
+          <a href="#contact" class="header__nav__link">Contact</a>
+          <div class="header__nav__link d-hidden-medium dropdown" onclick="displayMenu()">
+            <i class="fas fa-ellipsis-h dropdown__title"></i>
+            <nav id="dropdownNav" class="dropdown__nav">
+              <a href="#about" class="header__nav__link dropdown__item">A&nbsp;propos</a>
+              <a href="#testimonials" class="header__nav__link dropdown__item">Témoignages</a>
+            </nav>
+          </div>
+        </div>
+      </nav>
 
-		<section id="projects">
-		  <h3>Web development portfolio</h3>
+    </div>
 
-       <div id="filter-container">
-        <div id="filter-div">
-          <button type="button" class="filter-tag btn active" id="filter-all" onClick="filterProjects('all')">All</button>
-          <button type="button" class="filter-tag btn" id="filter-front-end" onClick="filterProjects('front-end')">Front-end</button>
-          <button type="button" class="filter-tag btn" id="filter-javascript" onClick="filterProjects('javascript')">JavaScript</button>
+    <div class="header__middle">
+      <p class="header__title">Aurore Weingartner</p>
+      <p class="header__subtitle">Développeuse web fullstack</p>
+    </div>
+
+    <div class="header__bottom row">
+      <p class="header__highlight col-3">Rigueur</p>
+      <p class="header__highlight col-4-medium col-5">Force&nbsp;de&nbsp;proposition</p>
+      <p class="header__highlight col-3">Adaptabilité</p>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section id="skills">
+
+      <h2>Compétences</h2>
+
+      <div class="section-body row split-section">
+
+        <div class="sub-section col-3-medium col-12">
+          <h3>Frontend</h3>
+          <div class="row split-section">
+            <div class="col-12-medium col-6">
+              <h4>Langages</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="col-12-medium col-6">
+              <h4>Outils</h4>
+                <ul>
+                  <li>Vue.js</li>
+                  <li>Angular</li>
+                  <li>React</li>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                </ul>
+            </div>
+          </div>
+            <hr class="d-hidden-medium" />
+        </div>
+
+        <div class="vertical-line d-hidden d-medium"></div>
+
+        <div class="sub-section col-3-medium col-12">
+          <h3>Backend</h3>
+          <div class="row split-section">
+            <div class="col-12-medium col-6">
+              <h4>Langages</h4>
+                <ul>
+                  <li>Javascript</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                  <li>PL/SQL</li>
+                </ul>
+            </div>
+            <div class="col-12-medium col-6">
+              <h4>Outils</h4>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Java (SE, EE)</li>
+                  <li>MySQL</li>
+                  <li>SQL&nbsp;Server&nbsp;+&nbsp;SSMS</li>
+                </ul>
+            </div>
+          </div>
+            <hr class="d-hidden-medium" />
+        </div>
+
+        <div class="vertical-line d-hidden d-medium"></div>
+
+        <div class="sub-section col-3-medium col-12">
+          <h3>Outils</h3>
+          <ul>
+            <li>Visual&nbsp;Studio&nbsp;Code</li>
+            <li>Eclipse</li>
+            <li>Android&nbsp;Studio</li>
+            <li>Wordpress</li>
+            <li>Github</li>
+          </ul>
+        </div>
+        
+        <div class="sub-section skills-soft col-12">
+          <hr />
+
+          <h3 class="skills-softskills">Soft skills</h3>
+          <ul>
+            <li>Rigueur, méthode</li>
+            <li>Esprit critique</li>
+            <li>Autonomie, adaptation, apprentissage</li>
+            <li>Force de proposition</li>
+            <li>Gestion de projet</li>
+            <li>Travail en équipe</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="projects">
+      <h2>Projets</h2>
+      <div id="js-projects-showcase" class="section-body row projects-section"></div>
+    </section>
+
+    <section id="about">
+      <h2>A propos</h2>
+      <div class="section-body">
+        <h3>Le développement web, ma passion !</h3>
+        <div class="about__body">
+          <img src="resources/images/Aurore.jpg"
+               class="about__img" 
+               alt="Photo de Aurore" />
+          <p class="about__description">
+            Je suis une développeuse web basée à Strasbourg en Alsace.<br /><br />
+            Avant, je travaillais dans le domaine QSE (qualité, sécurité, environnement). En 2020, j'ai choisi de me reconvertir vers le développement, un secteur qui m'a toujours attiré. J'ai commencé par des cours sur freeCodeCamp et OpenClassrooms, puis j'ai suivi la formation Développeur Web &amp; Web mobile à l'ENI jusqu'en avril 2021.<br />
+            J'ai utilisé plusieurs langages, comme HTML, CSS, JavaScript, Java, SQL, ainsi que différentes librairies et frameworks tels que Bootstrap, jQuery, Sass, React, Vue.js, discord.js et node.js. Autant dire que mon c&oelig;ur penche pour JavaScript.<br />
+            J'aime beaucoup apprendre, que ce soit des mises à jour de mes connaissances, ou bien de nouveaux concepts.<br />
+            Je prends beaucoup de plaisir à réfléchir, résoudre des problèmes, développer, débugger, tant dans des projets professionnels que personnels.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Témoignages</h2>
+      <div id="js-testimonials-showcase" class="section-body"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="section-body contact-section">
+
+        <div class="contact__sub-section">
+          <h3 class="contact__sub-section__title">Localisation</h3>
+          <p>Strasbourg, France</p>
+          <h3 class="contact__sub-section__title">Téléphone</h3>
+          <p>06.36.01.11.08</p>
+          <h3 class="contact__sub-section__title">E-mail</h3>
+          <a href="mailto:aurore.weingartner@gmail.com">aurore.weingartner@gmail.com</a>
+          <hr class="d-hidden-xl" />
+        </div>
+
+        <form action="https://formspree.io/f/moqydnag" method="POST" class="contact__form">
+  
+          <div class="form__group">
+            <input type="radio" 
+                   id="mrs-radio" 
+                   name="radio" 
+                   value="mrs" 
+                   required />
+            <span class="radiomark"></span>
+            <label class="label-radio" for="mrs-radio">Mme</label>
+  
+            <input type="radio" 
+                   id="mr-radio" 
+                   name="radio" 
+                   value="mr" 
+                   required />
+            <span class="radiomark"></span>
+            <label class="label-radio" for="mr-radio">M.</label>
+          </div>
+  
+          <div class="form__group">
+            <label for="firstname">Prénom</label>
+            <input type="text" 
+                   id="firstname" 
+                   class="form__txt-input" 
+                   name="_fname" 
+                   required />
+          </div>
+  
+          <div class="form__group">
+            <label for="lastname">Nom</label>
+            <input type="text" 
+                   id="lastname" 
+                   class="form__txt-input" 
+                   name="_lname" 
+                   required />
+          </div>
+  
+          <div class="form__group">
+            <label for="company">Société (facultatif)</label>
+            <input type="text" 
+                   id="company" 
+                   class="form__txt-input" 
+                   name="company" />
+          </div>
+  
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" 
+                   id="email" 
+                   class="form__txt-input" 
+                   name="email" 
+                   required />
+          </div>
+  
+          <div class="form__group">
+            <label for="phone">Téléphone (facultatif)</label>
+            <input type="tel" 
+                   id="phone" 
+                   class="form__txt-input" 
+                   name="phone" />
+          </div>
+  
+          <div class="form__group">
+            <label for="subject">Objet</label>
+            <input type="text" 
+                   id="subject" 
+                   class="form__txt-input" 
+                   name="_subject" 
+                   required />
+          </div>
+  
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" 
+                      class="form__txt-input" 
+                      name="_message"></textarea>
+          </div>
+  
+          <div class="form__group form__data-stmt-group">
+            <input type="checkbox" 
+                   id="personal-data-statement" 
+                   name="personal-data-statement" 
+                   required />
+            <span class="checkmark"></span>
+            <label class="label-data-stmt" for="personal-data-statement">
+              J'accepte que mes informations mentionnées ci-dessus soient utilisées uniquement dans le cadre de ma demande et de la relation qui peut en découler.
+            </label>
+          </div>
+  
+          <button type="submit" class="btn btn-primary btn-submit">
+            Envoyer
+          </button>
+  
+        </form>
+
+        <div class="social__sub-section">
+          <a class="social__link" 
+             href="https://www.linkedin.com/in/aurore-weingartner/">
+            <img src="resources/images/LinkedIn-White-120px.png" 
+                 class="social__logo" 
+                 alt="LinkedIn" />
+          </a>
+  
+          <a class="social__link" 
+             href="https://github.com/LangkaWS">
+            <img src="resources/images/Github-White-120px.png"
+                 class="social__logo" 
+                 alt="Github" />
+          </a>
         </div>
       </div>
 
-		  	<div id="project-showcase">
+    </section>
+  </main>
 
-			   	<div class="project-tile filterDiv front-end">
-			   		<a href="https://codepen.io/LangkaWS/full/rNxOQre" target="_blank" class="project-link">
-			   			<div class="project-title">
-			   				<h4>Tribute page</h4>
-			   				<h5>for freeCodeCamp</h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			   				<img src="/resources/images/fcc-project-thumbnail-oreo-tribute.png">
-			   				<div id="slider">
-					   			<div class="project-description">
-					    			<p>This is my first project in web development!<br />
-					    			I had to build a responsive tribute page, so I took my awesome cat as the subject. He is a little crazy and he manages to make me laugh everyday!</p>
-					    		</div>
-					    		<div class="project-tags">
-					    			<div class="tag html-tag">HTML</div>
-					    			<div class="tag css-tag">CSS</div>
-					    		</div>
-					    		<div class="go-to-project">
-					    			<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-					    		</div>
-					    	</div>
-			   			</div>
-			   			
-			   		</a>
-			   	</div>
-
-			    <div class="project-tile filterDiv front-end">
-			    	<a href="https://codepen.io/LangkaWS/full/LYpvjxQ" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Survey form</h4>
-			   				<h5>for freeCodeCamp</h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/fcc-project-thumbnail-survey.png">
-			    			<div id="slider">
-					    		<div class="project-description">
-					    			<p>Practicing forms...</p>
-					    		</div>
-					    		<div class="project-tags">
-					    			<div class="tag html-tag">HTML</div>
-					    			<div class="tag css-tag">CSS</div>
-					    		</div>
-					    		<div class="go-to-project">
-					    			<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-					    		</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-			    </div>
-
-			    <div class="project-tile filterDiv front-end">
-			    	<a href="https://codepen.io/LangkaWS/full/poggzJW" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Product landing page</h4>
-			   				<h5>for freeCodeCamp</h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/fcc-project-thumbnail-product-landing.png">
-			    			<div id="slider">
-					    		<div class="project-description">
-					    			<p>The harder part of building a product landing page is to find the subject...</p>
-					    		</div>
-					    		<div class="project-tags">
-					    			<div class="tag html-tag">HTML</div>
-					    			<div class="tag css-tag">CSS</div>
-					    		</div>
-					    		<div class="go-to-project">
-					    			<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-					    		</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-			    </div>
-
-			    <div class="project-tile filterDiv front-end">
-			    	<a href="https://codepen.io/LangkaWS/full/rNOgdzb" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Technical documentation page</h4>
-			   				<h5>for freeCodeCamp</h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/fcc-project-thumbnail-technical-documentation.png">
-				    			<div id="slider">
-						    	<div class="project-description">
-						    		<p>I built a technical documentation page for the freeCodeCamp certification, practicing position of navbar among others.</p>
-						    	</div>
-						    	<div class="project-tags">
-						    		<div class="tag html-tag">HTML</div>
-						    		<div class="tag css-tag">CSS</div>
-						    	</div>
-						    	<div class="go-to-project">
-						    		<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-						    	</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-			    </div>
-				
-				<div class="project-tile filterDiv javascript">
-			    	<a href="palindrome.html" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Palindrome checker</h4>
-			   				<h5></h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/palindrome-checker.png">
-				    			<div id="slider">
-						    	<div class="project-description">
-						    		<p>Based on a JavaScript function I created, you may enter a word or a sentence and this tool will check if this is a palindrome.</p>
-						    	</div>
-						    	<div class="project-tags">
-						    		<div class="tag html-tag">HTML</div>
-						    		<div class="tag css-tag">CSS</div>
-								<div class="tag javascript-tag">JavaScript</div>
-						    	</div>
-						    	<div class="go-to-project">
-						    		<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-						    	</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-				</div>
-				
-				<!--
-				<div class="project-tile filterDiv javascript">
-			    	<a href="sudoku-validator.html" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Sudoku validator</h4>
-			   				<h5></h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/sudoku-validator.png">
-				    			<div id="slider">
-						    	<div class="project-description">
-						    		<p>Based on a JavaScript function I created, you may complete a sudoku board and this tool will check whether your solution is valide or not.</p>
-						    	</div>
-						    	<div class="project-tags">
-						    		<div class="tag html-tag">HTML</div>
-						    		<div class="tag css-tag">CSS</div>
-								<div class="tag javascript-tag">JavaScript</div>
-						    	</div>
-						    	<div class="go-to-project">
-						    		<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-						    	</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-				</div>
-				-->
-				
-				<div class="project-tile filterDiv javascript">
-			    	<a href="roman-converter.html" target="_blank" class="project-link">
-			    		<div class="project-title">
-			   				<h4>Roman converter</h4>
-			   				<h5></h5>
-			   			</div>
-			   			<div class="project-thumbnail">
-			    			<img src="/resources/images/roman-converter.png">
-				    			<div id="slider">
-						    	<div class="project-description">
-						    		<p>Based on a JavaScript function I created, you may complete a sudoku board and this tool will check whether your solution is valide or not.</p>
-						    	</div>
-						    	<div class="project-tags">
-						    		<div class="tag html-tag">HTML</div>
-						    		<div class="tag css-tag">CSS</div>
-								<div class="tag javascript-tag">JavaScript</div>
-						    	</div>
-						    	<div class="go-to-project">
-						    		<div class="go-to-btn"><svg class="external-link-icon" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>Let's see</div>
-						    	</div>
-					    	</div>
-			    		</div>
-			    		
-			    	</a>
-			    </div>
-			</div>
-		</section>
-
-		<section id="about">
-      		<h3 id="about-title">About Me</h3>
-      		<div id="about-div">
-      			<div class="col">
-		      		<div id="photo-div-border">
-		        		<div id="photo-div">
-		          			<img src="/resources/images/20170629_2250112.jpg" id="photo"/>
-						</div>
-		      		</div>
-	      		</div>
-	      		<div id="main-col">
-		      		<p id="about-text">
-				      	<strong>Hi!</strong><br /><br />
-						My name is Aurore, alias Langka. I'm 28 years old, I live in Alsace (France), near Strasbourg.<br /><br />
-						My challenge: have a position as a web developer. Why? Because I love this field. Create new projects, helping people with technology, learning almost everyday something new, ...<br />
-				      	Currently I'm learning web development from scratch. I took online courses on freeCodeCamp and OpenClassrooms and built some projects from January to July, 2020. Now, I'm in remote training at ENI, from September 2020 to April 2021. I am looking for an internship in a company, on site or remotely, from March 8 to April 30, 2021.<br /><br />
-				      	For now I work with HTML, CSS, JavaScript, Java and SQL. I'm learning front-end libraries like Bootstrap, jQuery, Sass, ReactJS and Redux. And I'd love learn Angular, Vue.js, Node.js !
-				      </p>
-				</div>
-				<div class="col">
-				</div>
-		  	</div>
-		</section>
-
-		<section id="contact-section">
-		  <h3 id="contact-title">So you want to contact me? Let' discuss about your projects, or just talk! Leave me a message in the form below or send me an email, I'd be happy to answer you as soon as possible !</h3>
-      
-      <form id="contact-form" action="https://formspree.io/xaypaerb" method="POST">
-        
-        <input type="hidden" name="_subject" value="New submission!" />
-        
-        <label for="mrs" class="label-text"><input type="radio" id="mrs" value="mrs" name="radio" required />Mrs</label>
-        <label for="mr" class="label-text"><input type="radio" id="mr" value="mr" name="radio" required />Mr.</label><br /><br />
-        
-        <label for="firstname" id="firstname-label" class="label-text">First Name *</label><br />
-        <input type="text" name="firstname" id="firstname" class="input-field" required/><br /><br />
-        
-        <label for="lastname" id="lastname-label" class="label-text">Last Name *</label><br />
-        <input type="text" name="lastname" id="lastname" class="input-field" required/><br /><br />
-        
-        <label for="society" id="society-label" class="label-text">Society (optional)</label><br />
-        <input type="text" name="society" id="society" class="input-field" /><br /><br />
-        
-        <label for="email" id="email-label" class="label-text">Email *</label><br />
-        <input type="email" name="email" id="email" class="input-field" required/><br /><br />
-        
-        <label for="dropdown" id="dropdown-label" class="label-text">Subject *</label><br />
-        <select id="dropdown" name="dropdown" onChange="displayTextField()">
-          <option value="" disabled selected>Please select a subject</option>
-          <option value="job-offer">Job offer</option>
-          <option value="project">Project</option>
-          <option value="feedback">Feedback</option>
-          <option value="help">Question/help</option>
-          <option value="other">Other</option>
-        </select><br /><br />
-        
-        <div id="subject-other-div" class="label-text">
-          <label for="subject-other" id="subject-other-label">Please specify:</label><br />
-          <input type="text" name="subject-other" id="subject-other" class="input-field" /><br /><br />
-        </div>
-        
-        <label for="message" id="message-label" class="label-text">Message *</label><br />
-        <textarea name="message" id="message" class="input-field"></textarea><br /><br />
-        
-        <label for="personal-data-statement" id="personal-data-statement-label"><input type="checkbox" id="personal-data-statement" name="personal-data-statement" value="true" required/>I agree that the personal data provided will be processed in the context of current correspondence.</label>
-        
-        <button type="submit" id="submit-btn">Send</button>
-        
-      </form>
-      
-		  <div id="social-container">
-        <a href="https://github.com/LangkaWS" target="_blank"><img src="/resources/images/GitHub-Mark-120px-plus.png" id="github-logo" class="logo"></a>
-        <a href="https://codepen.io/LangkaWS" target="_blank" id="profile-link"><img src="/resources/images/Button-Black-Large.png" id="codepen-logo" class="logo"></a>
-        <a href="https://www.linkedin.com/in/aurore-weingartner/" target="_blank"><img src="/resources/images/LI-In-Bug.png" id="linked-in-logo" class="logo"></a>
-        <a href="mailto:langkaws@outlook.com" target="_blank"><img src="/resources/images/at.png" id="email-logo" class="logo"></a>
+  <footer>
+    <nav class="footer__nav row">
+      <div class="nav__item col-6-small col-5th-medium">
+        <a href="#skills" class="nav__link">Compétences</a>
       </div>
-
-		</section>
-
-
-		<footer id="footer">
-			<div id="copy"><p>&copy; 2020 Langka WebStudio. All rights reserved.</p></div>
-			<script>
-        	filterProjects("all")
-    		function filterProjects(c) {
-    			var x, i;
-    			x = document.getElementsByClassName("filterDiv");
-    			if(c == "all") c = "";
-    			for(i = 0; i < x.length; i++) {
-    				removeClass(x[i], "show");
-    				addClass(x[i], "hide");
-    				if(x[i].className.indexOf(c) > -1) {
-    					addClass(x[i], "show");
-    					removeClass(x[i], "hide");
-    				}
-    			}
-    		}
-
-    		function addClass(element, name) {
-    			var i, arr1, arr2;
-    			arr1 = element.className.split(" ");
-    			arr2 = name.split(" ");
-    			for(i = 0; i < arr2.length; i++) {
-    				if(arr1.indexOf(arr2[i]) == -1) {
-    					element.className += " " + arr2[i];
-    				}
-    			}
-    		}
-
-    		function removeClass(element, name) {
-    			var i, arr1, arr2;
-    			arr1 = element.className.split(" ");
-    			arr2 = name.split(" ");
-    			for(i = 0; i < arr2.length; i++) {
-    				while(arr1.indexOf(arr2[i]) > -1) {
-    					arr1.splice(arr1.indexOf(arr2[i]), 1);
-    				}
-    			}
-    			element.className = arr1.join(" ");
-    		}
-
-    		var btnContainer = document.getElementById("filter-div");
-    		var btns = btnContainer.getElementsByClassName("btn");
-    		for(var i = 0; i < btns.length; i++) {
-    			btns[i].addEventListener("click", function() {
-    				var current = document.getElementsByClassName("active");
-    				current[0].className = current[0].className.replace(" active", "");
-    				this.className += " active";
-    			});
-    		}
-        
-        function displayTextField() {
-          var dropdownText = document.getElementById("dropdown").value;
-          if(dropdownText == "other") {
-            document.getElementById("subject-other-div").style.display = "block";
-          } else {
-            document.getElementById("subject-other-div").style.display = "none";
-          }
-        }
-    	</script>
-			
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173568776-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-173568776-1');
-</script>
-
-		</footer>
-    </body>
+      <div class="nav__item col-6-small col-5th-medium">
+        <a href="#projects" class="nav__link">Projets</a>
+      </div>
+      <div class="nav__item col-6-small col-5th-medium">
+        <a href="#about" class="nav__link">A&nbsp;propos</a>
+      </div>
+      <div class="nav__item col-6-small col-5th-medium">
+        <a href="#testimonials" class="nav__link">Témoignages</a>
+      </div>
+      <div class="nav__item col-6-small col-5th-medium">
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+    </nav>
+    <p class="copyright">
+      &copy; 2021 - Aurore Weingartner - Tous droits réservés.
+    </p>
+    <script src="resources/data/projects.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/testimonials.js"></script>
+  </footer>
+  
+</body>
 </html>

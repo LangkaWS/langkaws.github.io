@@ -1,0 +1,556 @@
+/* GLOBAL */
+
+@font-face {
+  font-family: "Tomorrow";
+  src: url("../resources/fonts/Tomorrow-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Tomorrow bold";
+  src: url("../resources/fonts/Tomorrow-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../resources/fonts/Roboto-Regular.ttf");
+}
+
+:root {
+  --primary-color: #FFA00F;
+  --primary-color-light: #FFC46A;
+  --secondary-color: #2E21B1;
+  --light-color: #FFFFFF;
+  --dark-color: #000000;
+  --dark-color-transp: #000000ec;
+  --dark-color-light: #0e0e0e;
+  --valid: #3ec96d;
+  --invalid: #c93e47;
+  --header-crop: 60px;
+  min-width: 300px;
+}
+
+* {
+  color: var(--light-color);
+  font-family: "Roboto";
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+h1 {
+  color: var(--primary-color-light);
+  font-family: "Tomorrow";
+  text-align: center;
+}
+
+h2 {
+  background-color: var(--primary-color-light);
+  color: var(--dark-color);
+  font-family: "Tomorrow";
+  padding: 2px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+h3 {
+  color: var(--primary-color-light);
+  font-family: "Tomorrow bold";
+  margin: 10px auto;
+  text-align: center;
+}
+
+h4 {
+  color: var(--primary-color-light);
+  margin-top: 10px;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  border-color: var(--primary-color-light);
+  margin: 15px 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.section-body {
+  padding: 30px;
+  justify-content: space-around;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.external-link-icon {
+  color: var(--dark-color);
+}
+
+/* HEADER */
+
+.main-page__header {
+  height: 100vh;
+}
+
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-color);
+    height: 20vh;
+  }
+
+    .header__top:after {
+      content: "";
+      position: absolute;
+      background-color: var(--light-color);
+      top: 20vh;
+      width: 100%;
+      height: var(--header-crop);
+      z-index: 0;
+    }
+
+    .header__logo {
+      display: block;
+      height: 10vh;
+      margin: auto;
+    }
+
+    .header__nav {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+    
+      .header__nav__link {
+        display: block;
+        text-align: center;
+        color: var(--dark-color);
+        font-family: "Tomorrow";
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding-bottom: 10px;
+      }
+
+      .dropdown__title {
+        color: var(--dark-color);
+      }
+
+      .dropdown__nav {
+        right: 0;
+        text-align: right;
+        background-color: var(--light-color);
+      }
+
+      .dropdown__item {
+        text-align: right;
+        padding: 10px;
+        border-right: solid 2px var(--dark-color-light);
+      }
+
+  .header__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color-light);
+    text-align: center;
+    height: 60vh;
+    clip-path: polygon(0 0, 35% 0, 65% var(--header-crop), 100% var(--header-crop), 100% 100%, 65% 100%, 35% calc(100% - var(--header-crop)), 0 calc(100% - var(--header-crop)));
+  }
+
+    .header__title {
+      color: var(--dark-color);
+      font-family: "Tomorrow";
+      font-size: 5rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .header__subtitle {
+      color: var(--dark-color);
+      font-family: "Tomorrow";
+      font-size: 4rem;
+    }
+
+  .header__bottom {
+    height: 20vh;
+    justify-content: space-around;
+  }
+
+    .header__highlight {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding: 10px;
+      max-width: 455px;
+      font-size: 1.2rem;
+      background-color: var(--secondary-color);
+      clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+    }
+
+      .header__highlight:not(:nth-child(2)) {
+        position: relative;
+        bottom: -20px;
+      }
+
+      .header__highlight:nth-child(2) {
+        position: relative;
+        top: -20px;
+      }
+
+/* SKILLS */
+
+.vertical-line {
+  border-right: solid 2px var(--primary-color-light);
+  margin: 0 30px;
+}
+
+.split-section {
+  justify-content: space-evenly;
+}
+
+.sub-section {
+  text-align: center;
+}
+
+/* PROJECTS */
+
+.projects-section {
+  max-width: 1360px;
+  margin: auto;
+}
+
+.project__tile {
+  text-align: center;
+  margin: 20px;
+}
+
+.project__tile__preview {
+  display: block;
+  position: relative;
+  width: 385px;
+  margin: auto;
+}
+
+.project__tile__img {
+      border: solid 2px var(--dark-color-light);
+      display: block;
+    }
+
+  .project__tile__overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: var(--dark-color-transp);
+    height: 0;
+    width: 389px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+    .project__tile__year {
+      width: max-content;
+      background-color: var(--light-color);
+      clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+      color: var(--dark-color-light);
+      padding: 5px;
+      margin: 10px;
+    }
+
+    .btn-close {
+      float: right;
+      color: var(--light-color);
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .project__tile__description {
+      text-align: justify;
+      margin: 10px;
+    }
+
+    .project__tile__tech-list {
+      display: flex;
+    }
+
+      .project__tile__tech {
+        background-color: var(--secondary-color);
+        font-family: "Tomorrow";
+        font-size: 0.8rem;
+        margin: 0 10px;
+        padding: 5px;
+        clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+      }
+
+    .project__tile__link {
+      font-size: 1rem;
+      padding: 5px 10px;
+      clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+    }
+
+    .project__tile__preview:hover .project__tile__overlay, .project__tile__overlay--show {
+      bottom: 0;
+      height: 100%;
+    }
+
+.project__iframe {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: 2;
+}
+
+/* ABOUT */
+
+.about__body {
+  overflow: auto;
+  margin: auto;
+}
+
+  .about__img {
+    width: 50%;
+    min-width: 165px;
+    max-width: 275px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+  }
+
+  .about__description {
+    margin: 1rem 0;
+    text-align: justify;
+    height: auto;
+  }
+
+/* TESTIMONIALS */
+
+.testimony {
+  border: solid 3px var(--light-color);
+  padding: 35px;
+  margin: 15px auto;
+  max-width: 870px;
+}
+
+  .testimony__text {
+    color: var(--light-color);
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .testimony__author {
+    font-family: "Tomorrow";
+    background-color: var(--secondary-color);
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+/* CONTACT */
+
+.contact-section {
+  text-align: center;
+}
+
+.contact__sub-section {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact__sub-section__title {
+  text-align: left;
+}
+
+.social__sub-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social__link {
+  display: inline-block;
+  margin-right: 20px;
+  width: 64px;
+}
+
+.social__logo {
+  width: 64px;
+}
+
+.contact__form {
+  margin: auto;
+  max-width: 768px;
+  text-align: left;
+}
+
+  .form__group {
+    margin-bottom: 15px;
+  }
+
+    /* Replace Checkboxes */
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkmark {
+      display: inline-block;
+      background-color: var(--light-color);
+      height: 1rem;
+      width: 1rem;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked + .checkmark {
+      background-color: var(--primary-color);
+    }
+
+    .checkmark:after {
+      display: none;
+      content: "";
+      position: relative;
+      top: 0.1rem;
+      left: 0.3rem;
+      height: 0.5rem;
+      width: 0.2rem;
+      border: solid var(--light-color);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    input[type="checkbox"]:checked + .checkmark:after {
+      display: block;
+    }
+
+    /* Replace Radio buttons */
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .radiomark {
+      display: inline-block;
+      background-color: var(--light-color);
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked + .radiomark {
+      background-color: var(--primary-color);
+    }
+
+    .radiomark:after {
+      display: none;
+      content:"";
+      height: 0.5rem;
+      width: 0.5rem;
+      position: relative;
+      top: 0.25rem;
+      left: 0.25rem;
+      border-radius: 50%;
+      background-color: var(--light-color);
+    }
+
+    input[type="radio"]:checked + .radiomark:after {
+      display: block;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    .label-radio {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .form__txt-input {
+      color: var(--dark-color);
+      display: block;
+      margin-top: 5px;
+      width: 100%;
+    }
+
+    textarea {
+      height: 140px;
+    }
+
+  .form__data-stmt-group {
+    text-align: justify;
+  }
+
+  .btn-submit {
+    clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+    display: block;
+    font-size: 1.1rem;
+    margin: auto;
+    padding: 5px 10px;
+  }
+
+  .btn-submit:hover {
+    background-color: var(--primary-color-light);
+  }
+
+/* FOOTER */
+
+.nav__item {
+  text-align: center;
+}
+
+  .nav__link {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    border: solid 2px var(--primary-color);
+    margin: 5px;
+  }
+
+    .nav__link:hover {
+      background-color: var(--dark-color-light);
+    }
+
+.copyright {
+  margin: 5px auto;
+  font-family: "Tomorrow";
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 992px) {
+  .about__body {
+    max-width: 900px;
+  }
+
+}
+
+@media (min-width: 1140px) {
+
+  .contact__sub-section, .contact__form {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contact__form {
+    border-left: solid 2px var(--primary-color-light);
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+}

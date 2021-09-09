@@ -1,0 +1,48 @@
+/* Display */
+
+.d-hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  
+  .d-hidden-medium {
+    display: none !important;
+  }
+  
+  .d-medium {
+    display: unset !important;
+  }
+
+}
+
+@media (min-width: 1140px) {
+
+  .d-hidden-xl {
+    display: none !important;
+  }
+
+  .d-xl {
+    display: unset !important;
+  }
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__nav {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown__nav {
+  display: block;
+}
+
+.show {
+  display: block !important;
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: 'Amatic SC';
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+*::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.back-arrow {
+  color: white;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+/* MENU STYLE */
+
+.menu {
+  display: inline-block;
+  width: 20vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow-y: scroll;
+  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+  scrollbar-width: thin;
+  min-width: 190px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.submenu {
+  border: solid 3px rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.map-name-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.map-name {
+  width: 100px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 2em;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: unset;
+}
+
+.reset-div {
+  text-align: center;
+}
+
+.reset-btn {
+    font-size: 2em;
+    padding: 0px 5px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border : solid 2px rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+
+/* MATES STYLE */
+
+.mate-icon {
+  width: 2.5vw;
+  z-index: 9;
+  min-width: 24px;
+}
+
+/* DISCLAIMER STYLE */
+
+.disclaimer {
+  font-family: Arial;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.disclaimer-txt {
+  font-family: Arial;
+  font-size: 0.8em;
+  margin: 5px;
+}
+.disclaimer-txt a {
+  font-family: Arial;
+}
+
+/* MAP STYLE */
+
+.map-div {
+  display: inline-block;
+  width: 79vw;
+  min-width: 630px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map {
+  display: none;
+  position: absolute;
+  min-width: 630px;
+  max-width: 79vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+/* FOOTER STYLE */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  margin: 5px auto;
+  font-family: "Tomorrow";
+  text-align: center;
+}
+
+@media (max-width: 1900px) {
+  .map-name-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/font-awesome.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <link rel="stylesheet" href="styles/projects/palindrome-checker.css" />
+  <title>Aurore Weingartner - Palindrome checker</title>
+</head>
+<body>
+
+  <header class="project-page__header">
+    <i id="js-back-arrow" class="fas fa-reply back-arrow"></i>
+  
+    <h1>Palindrome checker</h1>
+  </header>
+
+  <section class="section-body">
+    <h2>Qu'est-ce qu'un palindrome ?</h2>
+    <p class="palindrome-definition">Un palindrome est "un mot, un vers, une phrase que l'on peut lire indifféremment de gauche à droite ou de droite à gauche. (Exemple : le mot ressasser ou la phrase Ésope reste ici et se repose.)" (Larousse)</p>
+  
+    <form id="js-palindrome-form">
+      <label for="palindrome-input">Entrez un mot ou une phrase :</label>
+      <input type="text" id="js-palindrome-input" class="form__txt-input" />
+      <button type="submit" class="btn btn-primary btn-submit">Est-ce un palindrome ?</button>
+    </form>
+
+    <div id="js-output" class="output"></div>
+
+  </section>
+
+  <footer>
+    <p class="copyright">
+      &copy; 2021 - Aurore Weingartner - Tous droits réservés.
+    </p>
+    <script src="scripts/projects/script.js"></script>
+    <script src="scripts/projects/palindrome-checker.js"></script>
+  </footer>
+  
+</body>
+</html>
