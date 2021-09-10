@@ -290,7 +290,7 @@ hr {
       clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
     }
 
-    .project__tile__preview:hover .project__tile__overlay, .project__tile__overlay--show {
+    .project__tile__preview:hover .project__tile__overlay {
       bottom: 0;
       height: 100%;
     }

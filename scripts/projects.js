@@ -31,22 +31,9 @@
   const createTile = () => {
     const tile     = document.createElement('DIV');
     tile.className = 'project__tile';
-    if (isMobile) {
-      addMobileOnClickEvent(tile);
-    }
     return tile;
   }
   
-  const addMobileOnClickEvent = (element) => {
-    element.onclick = function() {
-      openOverlay(element);
-    }
-  }
-
-  const openOverlay = (element) => {
-    element.getElementsByClassName('project__tile__overlay')[0].classList.toggle('project__tile__overlay--show');
-  }
-
   const createTitle = (project) => {
     const title     = document.createElement('H3');
     title.innerHTML = project.name;
