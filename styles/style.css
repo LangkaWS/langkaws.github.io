@@ -282,7 +282,7 @@ hr {
         background-color: var(--secondary-color);
         font-family: "Tomorrow";
         font-size: 0.8rem;
-        margin: 0 10px;
+        margin: 0 5px;
         padding: 5px;
         clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
       }
