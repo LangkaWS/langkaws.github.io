@@ -20,7 +20,9 @@ const isMobile = detectMobile();
 
 const appHeight = () => {
   const vh = window.innerHeight/100;
+  const topCrop = (window.outerHeight - window.innerHeight) / 100;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty('--top-crop', `${topCrop}px`);
 }
 
 if (isMobile) {
