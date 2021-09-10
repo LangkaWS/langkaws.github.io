@@ -273,7 +273,7 @@ hr {
 
     .project__tile__description {
       text-align: justify;
-      margin: 10px;
+      padding: 10px;
       max-width: 254px;
     }
 
