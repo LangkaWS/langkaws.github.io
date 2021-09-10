@@ -17,3 +17,12 @@ const detectMobile = () => {
 };
 
 const isMobile = detectMobile();
+
+const appHeight = () => {
+  const vh = window.innerHeight/100;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+if (isMobile) {
+  window.addEventListener('resize', appHeight);
+}

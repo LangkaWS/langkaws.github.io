@@ -104,7 +104,7 @@ hr {
 /* HEADER */
 
 .main-page__header {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
   .header__top {
@@ -307,7 +307,7 @@ hr {
   top:0;
   left:0;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   border: none;
   z-index: 2;
 }
