@@ -233,7 +233,7 @@ hr {
 .project__tile__preview {
   display: block;
   position: relative;
-  width: 385px;
+  max-width: 385px;
   margin: auto;
 }
 
