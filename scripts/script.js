@@ -26,5 +26,6 @@ const appHeight = () => {
 }
 
 if (isMobile) {
+  appHeight();
   window.addEventListener('resize', appHeight);
 }
