@@ -37,9 +37,9 @@ const projects = [
   {
     "name": "Sortir",
     "url": "#",
-    "description": "Projet de formation : un site d'organisation de sorties développé initialement en Symfony, que j'ai redéveloppé en Javascript.",
+    "description": "Projet de formation : un site d'organisation de sorties développé initialement en Symfony.",
     "year": "2021",
-    "tech": ["node.js"]
+    "tech": ["Symfony", "MySQL"]
   },
   {
     "name": "Blanco Discord Bot",
