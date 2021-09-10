@@ -42,6 +42,13 @@ const projects = [
     "tech": ["Symfony", "MySQL"]
   },
   {
+    "name": "Ichtus Tchat App",
+    "url": "#",
+    "description": "Projet de stage chez Ichtus IT : créer en équipe une application de tchat avec Vue.js, Node.js et socket.io.",
+    "year": "2021",
+    "tech": ["vue.js", "node.js", "socket.io", "MySQL"]
+  },
+  {
     "name": "Blanco Discord Bot",
     "url": "#",
     "description": "Un bot Discord créé pour une communauté, il permet de gérer les rôles, les streams et la musique.",
