@@ -32,7 +32,7 @@ const projects = [
     "url": "#",
     "description": "Projet de formation : un site de vente aux enchères développé en Java.",
     "year": "2020",
-    "tech": ["java"]
+    "tech": ["java", "MySQL"]
   },
   {
     "name": "Sortir",
