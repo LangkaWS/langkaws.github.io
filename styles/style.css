@@ -264,13 +264,6 @@ hr {
       margin: 10px;
     }
 
-    .btn-close {
-      float: right;
-      color: var(--light-color);
-      margin: 10px;
-      cursor: pointer;
-    }
-
     .project__tile__description {
       text-align: justify;
       padding: 10px;

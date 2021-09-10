@@ -14,10 +14,6 @@
       const previewElements = [img, overlay];
       previewElements.forEach(element => preview.append(element));
 
-      if (isMobile) {
-        const closeBtn      = createCloseBtn();
-        overlay.append(closeBtn);
-      }
       const year            = createYear(project);
       const description     = createDescription(project);
       const techs           = createTechsSection(project);
@@ -106,19 +102,6 @@
     techDiv.className = 'project__tile__tech';
     techDiv.innerHTML = tech.toLowerCase();
     return techDiv;
-  }
-
-  const createCloseBtn = () => {
-    const closeBtn     = document.createElement('I');
-    closeBtn.className = 'fas fa-times btn-close';
-    closeBtn.onclick = () => {
-      closeOverlay(closeBtn);
-    }
-    return closeBtn;
-  }
-
-  const closeOverlay = (element) => {
-    element.parentNode.classList.remove('project__tile__overlay--show');
   }
 
   const createLink = (project) => {
