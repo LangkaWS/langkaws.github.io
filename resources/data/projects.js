@@ -46,6 +46,6 @@ const projects = [
     "url": "#",
     "description": "Un bot Discord créé pour une communauté, il permet de gérer les rôles, les streams et la musique.",
     "year": "2020-aujourd'hui",
-    "tech": ["node.js"]
+    "tech": ["node.js", "discord.js", "MySQL"]
   }
 ];
