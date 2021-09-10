@@ -26,6 +26,7 @@
   --valid: #3ec96d;
   --invalid: #c93e47;
   --header-crop: 60px;
+  --url-bar-height: calc(100vh - var(--vh, 1vh)*100);
   min-width: 300px;
 }
 
@@ -301,9 +302,11 @@ hr {
   top:0;
   left:0;
   width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(100vh + var(--url-bar-height));
+  padding-bottom: calc(var(--url-bar-height)*2);
   border: none;
   z-index: 2;
+  background-color: var(--dark-color);
 }
 
 /* ABOUT */
