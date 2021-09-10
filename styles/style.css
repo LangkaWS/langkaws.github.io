@@ -321,7 +321,7 @@ hr {
 
   .about__img {
     width: 50%;
-    min-width: 165px;
+    min-width: 100px;
     max-width: 275px;
     height: auto;
     float: right;
