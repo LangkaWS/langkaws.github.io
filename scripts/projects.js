@@ -14,6 +14,10 @@
       const previewElements = [img, overlay];
       previewElements.forEach(element => preview.append(element));
 
+      if (isMobile) {
+        const closeBtn      = createCloseBtn();
+        overlay.append(closeBtn);
+      }
       const year            = createYear(project);
       const description     = createDescription(project);
       const techs           = createTechsSection(project);
@@ -22,10 +26,6 @@
       if (project.url !== '#') {
         const link          = createLink(project);
         overlay.append(link);
-      }
-      if (isMobile) {
-        const closeBtn      = createCloseBtn();
-        overlay.append(closeBtn);
       }
 
       document.getElementById('js-projects-showcase').append(tile);
