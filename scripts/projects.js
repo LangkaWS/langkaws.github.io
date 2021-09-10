@@ -48,7 +48,7 @@
   }
 
   const openOverlay = (element) => {
-    element.lastChild.lastChild.classList.toggle('project__tile__overlay--show');
+    element.getElementsByClassName('project__tile__overlay')[0].classList.toggle('project__tile__overlay--show');
   }
 
   const createTitle = (project) => {
