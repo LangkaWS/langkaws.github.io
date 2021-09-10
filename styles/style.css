@@ -176,7 +176,7 @@ hr {
     .header__title {
       color: var(--dark-color);
       font-family: "Tomorrow";
-      font-size: 5rem;
+      font-size: 3.5rem;
       font-weight: 600;
       margin-bottom: 25px;
     }
@@ -184,7 +184,7 @@ hr {
     .header__subtitle {
       color: var(--dark-color);
       font-family: "Tomorrow";
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
 
   .header__bottom {
@@ -554,3 +554,13 @@ hr {
     padding-left: 20px;
   }
 }
+
+@media (min-width: 476px) {
+  .header__title {
+    font-size: 5rem;
+  }
+
+  .header__subtitle {
+    font-size: 4rem;
+  }
+
