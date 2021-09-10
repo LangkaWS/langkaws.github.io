@@ -237,10 +237,12 @@ hr {
   margin: auto;
 }
 
-.project__tile__img {
+  .project__tile__img {
       border: solid 2px var(--dark-color-light);
       display: block;
-    }
+      width: 250px;
+      height: auto;
+  }
 
   .project__tile__overlay {
     position: absolute;
@@ -248,7 +250,7 @@ hr {
     left: 0;
     background-color: var(--dark-color-transp);
     height: 0;
-    width: 389px;
+    width: 254px;
     overflow: hidden;
     transition: 0.5s ease-in-out;
   }
@@ -272,10 +274,12 @@ hr {
     .project__tile__description {
       text-align: justify;
       margin: 10px;
+      max-width: 254px;
     }
 
     .project__tile__tech-list {
       display: flex;
+      max-width: 254px;
     }
 
       .project__tile__tech {
@@ -564,3 +568,19 @@ hr {
     top: -20px;
   }
 
+  .project__tile__img {
+    width: 385px;
+  }
+
+  .project__tile__overlay {
+    width: 389px;
+  }
+
+  .project__tile__description {
+    max-width: 389px;
+  }
+
+  .project__tile__tech-list {
+    max-width: 389px;
+  }
+}
