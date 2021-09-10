@@ -106,7 +106,6 @@ hr {
 
 .main-page__header {
   height: calc(var(--vh, 1vh) * 100);
-  margin-top: calc(var(--top-crop, 0vh) * 100);
 }
 
   .header__top {
