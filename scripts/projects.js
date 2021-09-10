@@ -111,7 +111,14 @@
   const createCloseBtn = () => {
     const closeBtn     = document.createElement('I');
     closeBtn.className = 'fas fa-times btn-close';
+    closeBtn.onclick = () => {
+      closeOverlay(closeBtn);
+    }
     return closeBtn;
+  }
+
+  const closeOverlay = (element) => {
+    element.parentNode.classList.remove('project__tile__overlay--show');
   }
 
   const createLink = (project) => {
